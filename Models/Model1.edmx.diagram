@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="910d2dbcad3c41fb8c0d3371848878f8" Name="Diagram1">
+        <EntityTypeShape EntityType="vhmexMejorada.Actividad" Width="1.5" PointX="5.25" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="vhmexMejorada.Alumno" Width="1.5" PointX="3" PointY="23" IsExpanded="true" />
+        <EntityTypeShape EntityType="vhmexMejorada.AlumnoActividad" Width="1.5" PointX="7.5" PointY="23.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="vhmexMejorada.AlumnoAsistencia" Width="1.5" PointX="10.25" PointY="23.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="vhmexMejorada.AlumnoCalificacion" Width="1.5" PointX="10.5" PointY="27.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="vhmexMejorada.AlumnoGrupo" Width="1.5" PointX="9.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="vhmexMejorada.Asistencia" Width="1.5" PointX="12.5" PointY="23.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="vhmexMejorada.Calificacion" Width="1.5" PointX="8.25" PointY="34.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="vhmexMejorada.CicloEscolar" Width="1.5" PointX="10.5" PointY="13" IsExpanded="true" />
+        <EntityTypeShape EntityType="vhmexMejorada.CicloEscolarGrupo" Width="1.5" PointX="12.75" PointY="19.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="vhmexMejorada.CicloEscolarPlan" Width="1.5" PointX="12.75" PointY="13.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="vhmexMejorada.Criterios" Width="1.5" PointX="5.25" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="vhmexMejorada.Docente" Width="1.5" PointX="3" PointY="27.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="vhmexMejorada.DocenteGrupo" Width="1.5" PointX="8.25" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="vhmexMejorada.DocenteMateria" Width="1.5" PointX="5.25" PointY="23.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="vhmexMejorada.Estatus" Width="1.5" PointX="8.25" PointY="13.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="vhmexMejorada.Examen" Width="1.5" PointX="13.5" PointY="27.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="vhmexMejorada.ExamenAlumno" Width="1.5" PointX="10.25" PointY="17.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="vhmexMejorada.Grado" Width="1.5" PointX="5.25" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="vhmexMejorada.Grado_Grupo" Width="1.5" PointX="7.5" PointY="19.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="vhmexMejorada.Grupo" Width="1.5" PointX="5.25" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="vhmexMejorada.Materia" Width="1.5" PointX="3" PointY="16.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="vhmexMejorada.nivel" Width="1.5" PointX="5.25" PointY="19.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="vhmexMejorada.PadreAlumno" Width="1.5" PointX="5.25" PointY="31.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="vhmexMejorada.PadreDeFamilia" Width="1.5" PointX="3" PointY="30.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="vhmexMejorada.PlanDeEstudio" Width="1.5" PointX="10.5" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="vhmexMejorada.Presente" Width="1.5" PointX="10.25" PointY="31.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="vhmexMejorada.Rol" Width="1.5" PointX="0.75" PointY="19.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="vhmexMejorada.sysdiagrams" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="vhmexMejorada.Tarea" Width="1.5" PointX="15.5" PointY="23.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="vhmexMejorada.TareaAlumno" Width="1.5" PointX="5.25" PointY="15.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="vhmexMejorada.Usuario" Width="1.5" PointX="0.75" PointY="24.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="vhmexMejorada.UsuarioRol" Width="1.5" PointX="3" PointY="19.625" IsExpanded="true" />
+        <AssociationConnector Association="vhmexMejorada.FK__AlumnoAct__idAct__5441852A" ManuallyRouted="false" />
+        <AssociationConnector Association="vhmexMejorada.FK_Actividad_Docente" ManuallyRouted="false" />
+        <AssociationConnector Association="vhmexMejorada.FK_Actividad_DocenteGrupo" ManuallyRouted="false" />
+        <AssociationConnector Association="vhmexMejorada.FK_Actividad_DocenteMateria" ManuallyRouted="false" />
+        <AssociationConnector Association="vhmexMejorada.FK__Alumno__idUsuari__1CF15040" ManuallyRouted="false" />
+        <AssociationConnector Association="vhmexMejorada.FK__AlumnoAct__idAlu__534D60F1" ManuallyRouted="false" />
+        <AssociationConnector Association="vhmexMejorada.FK__AlumnoAsi__idAlu__59063A47" ManuallyRouted="false" />
+        <AssociationConnector Association="vhmexMejorada.FK__AlumnoCal__idAlu__5EBF139D" ManuallyRouted="false" />
+        <AssociationConnector Association="vhmexMejorada.FK__AlumnoGru__idAlu__4D94879B" ManuallyRouted="false" />
+        <AssociationConnector Association="vhmexMejorada.FK__PadreAlum__idAlu__66603565" ManuallyRouted="false" />
+        <AssociationConnector Association="vhmexMejorada.FK_Alumno_nivel" ManuallyRouted="false" />
+        <AssociationConnector Association="vhmexMejorada.FK_ExamenAlumno_Alumno" ManuallyRouted="false" />
+        <AssociationConnector Association="vhmexMejorada.FK_TareaAlumno_Alumno" ManuallyRouted="false" />
+        <AssociationConnector Association="vhmexMejorada.FK_AlumnoActividad_CicloEscolar" ManuallyRouted="false" />
+        <AssociationConnector Association="vhmexMejorada.FK__AlumnoAsi__idAsi__1332DBDC" ManuallyRouted="false" />
+        <AssociationConnector Association="vhmexMejorada.FK_AlumnoAsistencia_CicloEscolar" ManuallyRouted="false" />
+        <AssociationConnector Association="vhmexMejorada.FK__AlumnoCal__idCal__151B244E" ManuallyRouted="false" />
+        <AssociationConnector Association="vhmexMejorada.FK_AlumnoCalificacion_CicloEscolar" ManuallyRouted="false" />
+        <AssociationConnector Association="vhmexMejorada.FK_AlumnoCalificacion_DocenteGrupo" ManuallyRouted="false" />
+        <AssociationConnector Association="vhmexMejorada.FK_AlumnoGrupo_Grado_Grupo" ManuallyRouted="false" />
+        <AssociationConnector Association="vhmexMejorada.FK_Asistencia_DocenteGrupo" ManuallyRouted="false" />
+        <AssociationConnector Association="vhmexMejorada.FK_Asistencia_Grado_Grupo" ManuallyRouted="false" />
+        <AssociationConnector Association="vhmexMejorada.FK_Asistencia_Presente" ManuallyRouted="false" />
+        <AssociationConnector Association="vhmexMejorada.FK__CicloEsco__idCic__18EBB532" ManuallyRouted="false" />
+        <AssociationConnector Association="vhmexMejorada.FK__CicloEsco__idCic__1AD3FDA4" ManuallyRouted="false" />
+        <AssociationConnector Association="vhmexMejorada.FK_CicloEscolar_Estatus" ManuallyRouted="false" />
+        <AssociationConnector Association="vhmexMejorada.FK_ExamenAlumno_CicloEscolar" ManuallyRouted="false" />
+        <AssociationConnector Association="vhmexMejorada.FK_TareaAlumno_CicloEscolar" ManuallyRouted="false" />
+        <AssociationConnector Association="vhmexMejorada.FK_CicloEscolarGrupo_Grado_Grupo" ManuallyRouted="false" />
+        <AssociationConnector Association="vhmexMejorada.FK__CicloEsco__idPla__71D1E811" ManuallyRouted="false" />
+        <AssociationConnector Association="vhmexMejorada.FK_Criterios_Materia" ManuallyRouted="false" />
+        <AssociationConnector Association="vhmexMejorada.FK__Docente__idUsuar__182C9B23" ManuallyRouted="false" />
+        <AssociationConnector Association="vhmexMejorada.FK__DocenteGr__idDoc__47DBAE45" ManuallyRouted="false" />
+        <AssociationConnector Association="vhmexMejorada.FK__DocenteMa__idDoc__1F98B2C1" ManuallyRouted="false" />
+        <AssociationConnector Association="vhmexMejorada.FK_DocenteGrupo_DocenteMateria" ManuallyRouted="false" />
+        <AssociationConnector Association="vhmexMejorada.FK_DocenteGrupo_Grado_Grupo" ManuallyRouted="false" />
+        <AssociationConnector Association="vhmexMejorada.FK_Examen_DocenteGrupo" ManuallyRouted="false" />
+        <AssociationConnector Association="vhmexMejorada.FK_Tarea_DocenteGrupo" ManuallyRouted="false" />
+        <AssociationConnector Association="vhmexMejorada.FK__DocenteMa__idMat__4316F928" ManuallyRouted="false" />
+        <AssociationConnector Association="vhmexMejorada.FK_Examen_DocenteMateria" ManuallyRouted="false" />
+        <AssociationConnector Association="vhmexMejorada.FK_Tarea_DocenteMateria" ManuallyRouted="false" />
+        <AssociationConnector Association="vhmexMejorada.FK_ExamenAlumno_Examen" ManuallyRouted="false" />
+        <AssociationConnector Association="vhmexMejorada.FK_Grado_Grupo_Grado" ManuallyRouted="false" />
+        <AssociationConnector Association="vhmexMejorada.FK_Grado_Grupo_Grupo" ManuallyRouted="false" />
+        <AssociationConnector Association="vhmexMejorada.FK_Grado_Grupo_nivel" ManuallyRouted="false" />
+        <AssociationConnector Association="vhmexMejorada.FK_nivel_UsuarioRol" ManuallyRouted="false" />
+        <AssociationConnector Association="vhmexMejorada.FK__PadreAlum__idPad__2645B050" ManuallyRouted="false" />
+        <AssociationConnector Association="vhmexMejorada.FK__PadreDeFa__idUsu__21B6055D" ManuallyRouted="false" />
+        <AssociationConnector Association="vhmexMejorada.FK__UsuarioRo__idRol__09DE7BCC" ManuallyRouted="false" />
+        <AssociationConnector Association="vhmexMejorada.FK_TareaAlumno_Tarea" ManuallyRouted="false" />
+        <AssociationConnector Association="vhmexMejorada.FK__UsuarioRo__idUsu__08EA5793" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

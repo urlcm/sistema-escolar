@@ -1,0 +1,54 @@
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\SistemaEscolar\Controllers\bin\Debug\Controllers.dll.config
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\SistemaEscolar\Controllers\bin\Debug\Controllers.dll
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\SistemaEscolar\Controllers\bin\Debug\Controllers.pdb
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\SistemaEscolar\Controllers\bin\Debug\EntityFramework.dll
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\SistemaEscolar\Controllers\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\SistemaEscolar\Controllers\bin\Debug\Models.dll
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\SistemaEscolar\Controllers\bin\Debug\Models.pdb
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\SistemaEscolar\Controllers\bin\Debug\Models.dll.config
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\SistemaEscolar\Controllers\bin\Debug\EntityFramework.xml
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\SistemaEscolar\Controllers\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\SistemaEscolar\Controllers\obj\Debug\Controllers.csproj.AssemblyReference.cache
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\SistemaEscolar\Controllers\obj\Debug\Controllers.csproj.CoreCompileInputs.cache
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\SistemaEscolar\Controllers\obj\Debug\Controllers.csproj.CopyComplete
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\SistemaEscolar\Controllers\obj\Debug\Controllers.dll
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\SistemaEscolar\Controllers\obj\Debug\Controllers.pdb
+C:\Users\Uriel Cruz\Downloads\SistemaEscolar\Controllers\bin\Debug\Controllers.dll.config
+C:\Users\Uriel Cruz\Downloads\SistemaEscolar\Controllers\bin\Debug\Controllers.dll
+C:\Users\Uriel Cruz\Downloads\SistemaEscolar\Controllers\bin\Debug\Controllers.pdb
+C:\Users\Uriel Cruz\Downloads\SistemaEscolar\Controllers\bin\Debug\EntityFramework.dll
+C:\Users\Uriel Cruz\Downloads\SistemaEscolar\Controllers\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Uriel Cruz\Downloads\SistemaEscolar\Controllers\bin\Debug\Models.dll
+C:\Users\Uriel Cruz\Downloads\SistemaEscolar\Controllers\bin\Debug\Models.pdb
+C:\Users\Uriel Cruz\Downloads\SistemaEscolar\Controllers\bin\Debug\Models.dll.config
+C:\Users\Uriel Cruz\Downloads\SistemaEscolar\Controllers\bin\Debug\EntityFramework.xml
+C:\Users\Uriel Cruz\Downloads\SistemaEscolar\Controllers\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Uriel Cruz\Downloads\SistemaEscolar\Controllers\obj\Debug\Controllers.csproj.AssemblyReference.cache
+C:\Users\Uriel Cruz\Downloads\SistemaEscolar\Controllers\obj\Debug\Controllers.csproj.CoreCompileInputs.cache
+C:\Users\Uriel Cruz\Downloads\SistemaEscolar\Controllers\obj\Debug\Controllers.csproj.CopyComplete
+C:\Users\Uriel Cruz\Downloads\SistemaEscolar\Controllers\obj\Debug\Controllers.dll
+C:\Users\Uriel Cruz\Downloads\SistemaEscolar\Controllers\obj\Debug\Controllers.pdb
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\Controllers\bin\Debug\Controllers.dll.config
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\Controllers\bin\Debug\Controllers.dll
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\Controllers\bin\Debug\Controllers.pdb
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\Controllers\bin\Debug\EntityFramework.dll
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\Controllers\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\Controllers\bin\Debug\Models.dll
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\Controllers\bin\Debug\Models.pdb
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\Controllers\bin\Debug\Models.dll.config
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\Controllers\bin\Debug\EntityFramework.xml
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\Controllers\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\Controllers\obj\Debug\Controllers.csproj.AssemblyReference.cache
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\Controllers\obj\Debug\Controllers.csproj.CoreCompileInputs.cache
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\Controllers\obj\Debug\Controllers.csproj.CopyComplete
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\Controllers\obj\Debug\Controllers.dll
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\Controllers\obj\Debug\Controllers.pdb
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\Controllers\bin\Debug\ExcelDataReader.DataSet.dll
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\Controllers\bin\Debug\ExcelDataReader.dll
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\Controllers\bin\Debug\ExcelDataReader.pdb
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\Controllers\bin\Debug\ExcelDataReader.xml
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\Controllers\bin\Debug\ExcelDataReader.DataSet.pdb
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\Controllers\bin\Debug\ExcelDataReader.DataSet.xml
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\Controllers\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\Controllers\bin\Debug\itextsharp.dll
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\Controllers\bin\Debug\itextsharp.xml

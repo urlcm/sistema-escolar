@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="vhmexMejoradaStoreContainer" CdmEntityContainer="vhmexEntities">
+    <EntitySetMapping Name="Actividad">
+      <EntityTypeMapping TypeName="vhmexMejorada.Actividad">
+        <MappingFragment StoreEntitySet="Actividad">
+          <ScalarProperty Name="idActividad" ColumnName="idActividad" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="idDocente" ColumnName="idDocente" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="idDocMat" ColumnName="idDocMat" />
+          <ScalarProperty Name="valor" ColumnName="valor" />
+          <ScalarProperty Name="idDocenteGrupo" ColumnName="idDocenteGrupo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Alumno">
+      <EntityTypeMapping TypeName="vhmexMejorada.Alumno">
+        <MappingFragment StoreEntitySet="Alumno">
+          <ScalarProperty Name="idAlumno" ColumnName="idAlumno" />
+          <ScalarProperty Name="idUsuario" ColumnName="idUsuario" />
+          <ScalarProperty Name="IdNivel" ColumnName="IdNivel" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AlumnoActividad">
+      <EntityTypeMapping TypeName="vhmexMejorada.AlumnoActividad">
+        <MappingFragment StoreEntitySet="AlumnoActividad">
+          <ScalarProperty Name="idAlumno" ColumnName="idAlumno" />
+          <ScalarProperty Name="idActividad" ColumnName="idActividad" />
+          <ScalarProperty Name="idCicloEscolar" ColumnName="idCicloEscolar" />
+          <ScalarProperty Name="puntos" ColumnName="puntos" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AlumnoAsistencia">
+      <EntityTypeMapping TypeName="vhmexMejorada.AlumnoAsistencia">
+        <MappingFragment StoreEntitySet="AlumnoAsistencia">
+          <ScalarProperty Name="idAlumno" ColumnName="idAlumno" />
+          <ScalarProperty Name="idAsistencia" ColumnName="idAsistencia" />
+          <ScalarProperty Name="idCicloEscolar" ColumnName="idCicloEscolar" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AlumnoCalificacion">
+      <EntityTypeMapping TypeName="vhmexMejorada.AlumnoCalificacion">
+        <MappingFragment StoreEntitySet="AlumnoCalificacion">
+          <ScalarProperty Name="idAlumno" ColumnName="idAlumno" />
+          <ScalarProperty Name="idCalificacion" ColumnName="idCalificacion" />
+          <ScalarProperty Name="idDocenteGrupo" ColumnName="idDocenteGrupo" />
+          <ScalarProperty Name="idCicloEscolar" ColumnName="idCicloEscolar" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AlumnoGrupo">
+      <EntityTypeMapping TypeName="vhmexMejorada.AlumnoGrupo">
+        <MappingFragment StoreEntitySet="AlumnoGrupo">
+          <ScalarProperty Name="idAlumno" ColumnName="idAlumno" />
+          <ScalarProperty Name="idGradoGrupo" ColumnName="idGradoGrupo" />
+          <ScalarProperty Name="idAlumnoGrupo" ColumnName="idAlumnoGrupo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Asistencia">
+      <EntityTypeMapping TypeName="vhmexMejorada.Asistencia">
+        <MappingFragment StoreEntitySet="Asistencia">
+          <ScalarProperty Name="idAsistencia" ColumnName="idAsistencia" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="idPresente" ColumnName="idPresente" />
+          <ScalarProperty Name="idGradoGrupo" ColumnName="idGradoGrupo" />
+          <ScalarProperty Name="idDocenteGrupo" ColumnName="idDocenteGrupo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Calificacion">
+      <EntityTypeMapping TypeName="vhmexMejorada.Calificacion">
+        <MappingFragment StoreEntitySet="Calificacion">
+          <ScalarProperty Name="idCalificacion" ColumnName="idCalificacion" />
+          <ScalarProperty Name="calificacion1" ColumnName="calificacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CicloEscolar">
+      <EntityTypeMapping TypeName="vhmexMejorada.CicloEscolar">
+        <MappingFragment StoreEntitySet="CicloEscolar">
+          <ScalarProperty Name="idCicloEscolar" ColumnName="idCicloEscolar" />
+          <ScalarProperty Name="año" ColumnName="año" />
+          <ScalarProperty Name="periodo" ColumnName="periodo" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CicloEscolarGrupo">
+      <EntityTypeMapping TypeName="vhmexMejorada.CicloEscolarGrupo">
+        <MappingFragment StoreEntitySet="CicloEscolarGrupo">
+          <ScalarProperty Name="idCicloEscolar" ColumnName="idCicloEscolar" />
+          <ScalarProperty Name="idGradoGrupo" ColumnName="idGradoGrupo" />
+          <ScalarProperty Name="idCicloEscolarGrupo" ColumnName="idCicloEscolarGrupo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CicloEscolarPlan">
+      <EntityTypeMapping TypeName="vhmexMejorada.CicloEscolarPlan">
+        <MappingFragment StoreEntitySet="CicloEscolarPlan">
+          <ScalarProperty Name="idCicloEscolar" ColumnName="idCicloEscolar" />
+          <ScalarProperty Name="idPlanEstudio" ColumnName="idPlanEstudio" />
+          <ScalarProperty Name="idCicloEscolarPlan" ColumnName="idCicloEscolarPlan" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Criterios">
+      <EntityTypeMapping TypeName="vhmexMejorada.Criterios">
+        <MappingFragment StoreEntitySet="Criterios">
+          <ScalarProperty Name="idCriterio" ColumnName="idCriterio" />
+          <ScalarProperty Name="criterioAsistencia" ColumnName="criterioAsistencia" />
+          <ScalarProperty Name="criterioExamen" ColumnName="criterioExamen" />
+          <ScalarProperty Name="criterioTareas" ColumnName="criterioTareas" />
+          <ScalarProperty Name="criterioActividades" ColumnName="criterioActividades" />
+          <ScalarProperty Name="idMateria" ColumnName="idMateria" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Docente">
+      <EntityTypeMapping TypeName="vhmexMejorada.Docente">
+        <MappingFragment StoreEntitySet="Docente">
+          <ScalarProperty Name="idDocente" ColumnName="idDocente" />
+          <ScalarProperty Name="idUsuario" ColumnName="idUsuario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DocenteGrupo">
+      <EntityTypeMapping TypeName="vhmexMejorada.DocenteGrupo">
+        <MappingFragment StoreEntitySet="DocenteGrupo">
+          <ScalarProperty Name="idDocente" ColumnName="idDocente" />
+          <ScalarProperty Name="idGradoGrupo" ColumnName="idGradoGrupo" />
+          <ScalarProperty Name="idDocenteGrupo" ColumnName="idDocenteGrupo" />
+          <ScalarProperty Name="idDocMat" ColumnName="idDocMat" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DocenteMateria">
+      <EntityTypeMapping TypeName="vhmexMejorada.DocenteMateria">
+        <MappingFragment StoreEntitySet="DocenteMateria">
+          <ScalarProperty Name="idDocente" ColumnName="idDocente" />
+          <ScalarProperty Name="idMateria" ColumnName="idMateria" />
+          <ScalarProperty Name="IdDocMat" ColumnName="IdDocMat" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Estatus">
+      <EntityTypeMapping TypeName="vhmexMejorada.Estatus">
+        <MappingFragment StoreEntitySet="Estatus">
+          <ScalarProperty Name="idestado" ColumnName="idestado" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Examen">
+      <EntityTypeMapping TypeName="vhmexMejorada.Examen">
+        <MappingFragment StoreEntitySet="Examen">
+          <ScalarProperty Name="idExamen" ColumnName="idExamen" />
+          <ScalarProperty Name="idDocMateria" ColumnName="idDocMateria" />
+          <ScalarProperty Name="valor" ColumnName="valor" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="idDocenteGrupo" ColumnName="idDocenteGrupo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ExamenAlumno">
+      <EntityTypeMapping TypeName="vhmexMejorada.ExamenAlumno">
+        <MappingFragment StoreEntitySet="ExamenAlumno">
+          <ScalarProperty Name="idExamenAlumno" ColumnName="idExamenAlumno" />
+          <ScalarProperty Name="idAlumno" ColumnName="idAlumno" />
+          <ScalarProperty Name="idExamen" ColumnName="idExamen" />
+          <ScalarProperty Name="idCicloEscolar" ColumnName="idCicloEscolar" />
+          <ScalarProperty Name="puntos" ColumnName="puntos" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Grado">
+      <EntityTypeMapping TypeName="vhmexMejorada.Grado">
+        <MappingFragment StoreEntitySet="Grado">
+          <ScalarProperty Name="idGrado" ColumnName="idGrado" />
+          <ScalarProperty Name="grado1" ColumnName="grado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Grado_Grupo">
+      <EntityTypeMapping TypeName="vhmexMejorada.Grado_Grupo">
+        <MappingFragment StoreEntitySet="Grado_Grupo">
+          <ScalarProperty Name="idGradoGrupo" ColumnName="idGradoGrupo" />
+          <ScalarProperty Name="idGrado" ColumnName="idGrado" />
+          <ScalarProperty Name="idGrupo" ColumnName="idGrupo" />
+          <ScalarProperty Name="idNivel" ColumnName="idNivel" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Grupo">
+      <EntityTypeMapping TypeName="vhmexMejorada.Grupo">
+        <MappingFragment StoreEntitySet="Grupo">
+          <ScalarProperty Name="idGrupo" ColumnName="idGrupo" />
+          <ScalarProperty Name="Grupo1" ColumnName="Grupo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Materia">
+      <EntityTypeMapping TypeName="vhmexMejorada.Materia">
+        <MappingFragment StoreEntitySet="Materia">
+          <ScalarProperty Name="idMateria" ColumnName="idMateria" />
+          <ScalarProperty Name="nombreMateria" ColumnName="nombreMateria" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="nivel">
+      <EntityTypeMapping TypeName="vhmexMejorada.nivel">
+        <MappingFragment StoreEntitySet="nivel">
+          <ScalarProperty Name="idNivel" ColumnName="idNivel" />
+          <ScalarProperty Name="Nivel1" ColumnName="Nivel" />
+          <ScalarProperty Name="IdRolCoordinador" ColumnName="IdRolCoordinador" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PadreAlumno">
+      <EntityTypeMapping TypeName="vhmexMejorada.PadreAlumno">
+        <MappingFragment StoreEntitySet="PadreAlumno">
+          <ScalarProperty Name="idPadre" ColumnName="idPadre" />
+          <ScalarProperty Name="idAlumno" ColumnName="idAlumno" />
+          <ScalarProperty Name="idPadreAlumno" ColumnName="idPadreAlumno" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PadreDeFamilia">
+      <EntityTypeMapping TypeName="vhmexMejorada.PadreDeFamilia">
+        <MappingFragment StoreEntitySet="PadreDeFamilia">
+          <ScalarProperty Name="idPadre" ColumnName="idPadre" />
+          <ScalarProperty Name="idUsuario" ColumnName="idUsuario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PlanDeEstudio">
+      <EntityTypeMapping TypeName="vhmexMejorada.PlanDeEstudio">
+        <MappingFragment StoreEntitySet="PlanDeEstudio">
+          <ScalarProperty Name="idPlanEstudio" ColumnName="idPlanEstudio" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Presente">
+      <EntityTypeMapping TypeName="vhmexMejorada.Presente">
+        <MappingFragment StoreEntitySet="Presente">
+          <ScalarProperty Name="idPresente" ColumnName="idPresente" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Rol">
+      <EntityTypeMapping TypeName="vhmexMejorada.Rol">
+        <MappingFragment StoreEntitySet="Rol">
+          <ScalarProperty Name="idRol" ColumnName="idRol" />
+          <ScalarProperty Name="nombreRol" ColumnName="nombreRol" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="vhmexMejorada.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tarea">
+      <EntityTypeMapping TypeName="vhmexMejorada.Tarea">
+        <MappingFragment StoreEntitySet="Tarea">
+          <ScalarProperty Name="idTarea" ColumnName="idTarea" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="valor" ColumnName="valor" />
+          <ScalarProperty Name="idDocMat" ColumnName="idDocMat" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="idDocenteGrupo" ColumnName="idDocenteGrupo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TareaAlumno">
+      <EntityTypeMapping TypeName="vhmexMejorada.TareaAlumno">
+        <MappingFragment StoreEntitySet="TareaAlumno">
+          <ScalarProperty Name="idTarea" ColumnName="idTarea" />
+          <ScalarProperty Name="idAlumno" ColumnName="idAlumno" />
+          <ScalarProperty Name="idCicloEscolar" ColumnName="idCicloEscolar" />
+          <ScalarProperty Name="idTareaAlumno" ColumnName="idTareaAlumno" />
+          <ScalarProperty Name="puntos" ColumnName="puntos" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usuario">
+      <EntityTypeMapping TypeName="vhmexMejorada.Usuario">
+        <MappingFragment StoreEntitySet="Usuario">
+          <ScalarProperty Name="idUsuario" ColumnName="idUsuario" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="apellido" ColumnName="apellido" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="correo" ColumnName="correo" />
+          <ScalarProperty Name="foto" ColumnName="foto" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UsuarioRol">
+      <EntityTypeMapping TypeName="vhmexMejorada.UsuarioRol">
+        <MappingFragment StoreEntitySet="UsuarioRol">
+          <ScalarProperty Name="idUsuarioRol" ColumnName="idUsuarioRol" />
+          <ScalarProperty Name="idUsuario" ColumnName="idUsuario" />
+          <ScalarProperty Name="idRol" ColumnName="idRol" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

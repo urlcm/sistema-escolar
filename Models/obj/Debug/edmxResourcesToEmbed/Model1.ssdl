@@ -1,0 +1,1142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="vhmexMejorada.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Actividad">
+    <Key>
+      <PropertyRef Name="idActividad" />
+    </Key>
+    <Property Name="idActividad" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="descripcion" Type="varchar(max)" />
+    <Property Name="fecha" Type="date" />
+    <Property Name="estado" Type="varchar" MaxLength="20" />
+    <Property Name="idDocente" Type="int" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" />
+    <Property Name="idDocMat" Type="int" Nullable="false" />
+    <Property Name="valor" Type="int" />
+    <Property Name="idDocenteGrupo" Type="int" />
+  </EntityType>
+  <EntityType Name="Alumno">
+    <Key>
+      <PropertyRef Name="idAlumno" />
+    </Key>
+    <Property Name="idAlumno" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idUsuario" Type="int" Nullable="false" />
+    <Property Name="IdNivel" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AlumnoActividad">
+    <Key>
+      <PropertyRef Name="idAlumno" />
+      <PropertyRef Name="idActividad" />
+    </Key>
+    <Property Name="idAlumno" Type="int" Nullable="false" />
+    <Property Name="idActividad" Type="int" Nullable="false" />
+    <Property Name="idCicloEscolar" Type="int" Nullable="false" />
+    <Property Name="puntos" Type="int" />
+  </EntityType>
+  <EntityType Name="AlumnoAsistencia">
+    <Key>
+      <PropertyRef Name="idAlumno" />
+      <PropertyRef Name="idAsistencia" />
+    </Key>
+    <Property Name="idAlumno" Type="int" Nullable="false" />
+    <Property Name="idAsistencia" Type="int" Nullable="false" />
+    <Property Name="idCicloEscolar" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AlumnoCalificacion">
+    <Key>
+      <PropertyRef Name="idAlumno" />
+      <PropertyRef Name="idCalificacion" />
+    </Key>
+    <Property Name="idAlumno" Type="int" Nullable="false" />
+    <Property Name="idCalificacion" Type="int" Nullable="false" />
+    <Property Name="idDocenteGrupo" Type="int" Nullable="false" />
+    <Property Name="idCicloEscolar" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AlumnoGrupo">
+    <Key>
+      <PropertyRef Name="idAlumno" />
+      <PropertyRef Name="idGradoGrupo" />
+    </Key>
+    <Property Name="idAlumno" Type="int" Nullable="false" />
+    <Property Name="idGradoGrupo" Type="int" Nullable="false" />
+    <Property Name="idAlumnoGrupo" Type="int" />
+  </EntityType>
+  <EntityType Name="Asistencia">
+    <Key>
+      <PropertyRef Name="idAsistencia" />
+    </Key>
+    <Property Name="idAsistencia" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="fecha" Type="datetime" Nullable="false" />
+    <Property Name="idPresente" Type="int" Nullable="false" />
+    <Property Name="idGradoGrupo" Type="int" Nullable="false" />
+    <Property Name="idDocenteGrupo" Type="int" />
+  </EntityType>
+  <EntityType Name="Calificacion">
+    <Key>
+      <PropertyRef Name="idCalificacion" />
+    </Key>
+    <Property Name="idCalificacion" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="calificacion" Type="float" />
+  </EntityType>
+  <EntityType Name="CicloEscolar">
+    <Key>
+      <PropertyRef Name="idCicloEscolar" />
+    </Key>
+    <Property Name="idCicloEscolar" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="año" Type="int" Nullable="false" />
+    <Property Name="periodo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="estado" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CicloEscolarGrupo">
+    <Key>
+      <PropertyRef Name="idCicloEscolarGrupo" />
+    </Key>
+    <Property Name="idCicloEscolar" Type="int" Nullable="false" />
+    <Property Name="idGradoGrupo" Type="int" Nullable="false" />
+    <Property Name="idCicloEscolarGrupo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CicloEscolarPlan">
+    <Key>
+      <PropertyRef Name="idCicloEscolarPlan" />
+    </Key>
+    <Property Name="idCicloEscolar" Type="int" Nullable="false" />
+    <Property Name="idPlanEstudio" Type="int" Nullable="false" />
+    <Property Name="idCicloEscolarPlan" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Criterios">
+    <Key>
+      <PropertyRef Name="idCriterio" />
+    </Key>
+    <Property Name="idCriterio" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="criterioAsistencia" Type="int" Nullable="false" />
+    <Property Name="criterioExamen" Type="int" Nullable="false" />
+    <Property Name="criterioTareas" Type="int" Nullable="false" />
+    <Property Name="criterioActividades" Type="int" Nullable="false" />
+    <Property Name="idMateria" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Docente">
+    <Key>
+      <PropertyRef Name="idDocente" />
+    </Key>
+    <Property Name="idDocente" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idUsuario" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DocenteGrupo">
+    <Key>
+      <PropertyRef Name="idDocenteGrupo" />
+    </Key>
+    <Property Name="idDocente" Type="int" Nullable="false" />
+    <Property Name="idGradoGrupo" Type="int" Nullable="false" />
+    <Property Name="idDocenteGrupo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idDocMat" Type="int" />
+  </EntityType>
+  <EntityType Name="DocenteMateria">
+    <Key>
+      <PropertyRef Name="IdDocMat" />
+    </Key>
+    <Property Name="idDocente" Type="int" Nullable="false" />
+    <Property Name="idMateria" Type="int" Nullable="false" />
+    <Property Name="IdDocMat" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Estatus">
+    <Key>
+      <PropertyRef Name="idestado" />
+    </Key>
+    <Property Name="idestado" Type="int" Nullable="false" />
+    <Property Name="estado" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Examen">
+    <Key>
+      <PropertyRef Name="idExamen" />
+    </Key>
+    <Property Name="idExamen" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idDocMateria" Type="int" Nullable="false" />
+    <Property Name="valor" Type="int" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="idDocenteGrupo" Type="int" />
+  </EntityType>
+  <EntityType Name="ExamenAlumno">
+    <Key>
+      <PropertyRef Name="idExamenAlumno" />
+    </Key>
+    <Property Name="idExamenAlumno" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idAlumno" Type="int" Nullable="false" />
+    <Property Name="idExamen" Type="int" Nullable="false" />
+    <Property Name="idCicloEscolar" Type="int" Nullable="false" />
+    <Property Name="puntos" Type="int" />
+  </EntityType>
+  <EntityType Name="Grado">
+    <Key>
+      <PropertyRef Name="idGrado" />
+    </Key>
+    <Property Name="idGrado" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="grado" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Grado_Grupo">
+    <Key>
+      <PropertyRef Name="idGradoGrupo" />
+    </Key>
+    <Property Name="idGradoGrupo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idGrado" Type="int" Nullable="false" />
+    <Property Name="idGrupo" Type="int" Nullable="false" />
+    <Property Name="idNivel" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Grupo">
+    <Key>
+      <PropertyRef Name="idGrupo" />
+    </Key>
+    <Property Name="idGrupo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Grupo" Type="varchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Materia">
+    <Key>
+      <PropertyRef Name="idMateria" />
+    </Key>
+    <Property Name="idMateria" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombreMateria" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="nivel">
+    <Key>
+      <PropertyRef Name="idNivel" />
+    </Key>
+    <Property Name="idNivel" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nivel" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="IdRolCoordinador" Type="int" />
+  </EntityType>
+  <EntityType Name="PadreAlumno">
+    <Key>
+      <PropertyRef Name="idPadreAlumno" />
+    </Key>
+    <Property Name="idPadre" Type="int" />
+    <Property Name="idAlumno" Type="int" Nullable="false" />
+    <Property Name="idPadreAlumno" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PadreDeFamilia">
+    <Key>
+      <PropertyRef Name="idPadre" />
+    </Key>
+    <Property Name="idPadre" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idUsuario" Type="int" />
+  </EntityType>
+  <EntityType Name="PlanDeEstudio">
+    <Key>
+      <PropertyRef Name="idPlanEstudio" />
+    </Key>
+    <Property Name="idPlanEstudio" Type="int" Nullable="false" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Presente">
+    <Key>
+      <PropertyRef Name="idPresente" />
+    </Key>
+    <Property Name="idPresente" Type="int" Nullable="false" />
+    <Property Name="estado" Type="nchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Rol">
+    <Key>
+      <PropertyRef Name="idRol" />
+    </Key>
+    <Property Name="idRol" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombreRol" Type="varchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="Tarea">
+    <Key>
+      <PropertyRef Name="idTarea" />
+    </Key>
+    <Property Name="idTarea" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" />
+    <Property Name="valor" Type="int" Nullable="false" />
+    <Property Name="idDocMat" Type="int" Nullable="false" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="idDocenteGrupo" Type="int" />
+  </EntityType>
+  <EntityType Name="TareaAlumno">
+    <Key>
+      <PropertyRef Name="idTareaAlumno" />
+    </Key>
+    <Property Name="idTarea" Type="int" Nullable="false" />
+    <Property Name="idAlumno" Type="int" Nullable="false" />
+    <Property Name="idCicloEscolar" Type="int" Nullable="false" />
+    <Property Name="idTareaAlumno" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="puntos" Type="int" />
+  </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="idUsuario" />
+    </Key>
+    <Property Name="idUsuario" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="apellido" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="password" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="correo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="foto" Type="image" />
+  </EntityType>
+  <EntityType Name="UsuarioRol">
+    <Key>
+      <PropertyRef Name="idUsuarioRol" />
+    </Key>
+    <Property Name="idUsuarioRol" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idUsuario" Type="int" Nullable="false" />
+    <Property Name="idRol" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__Alumno__idUsuari__1CF15040">
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="1" />
+    <End Role="Alumno" Type="Self.Alumno" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="idUsuario" />
+      </Principal>
+      <Dependent Role="Alumno">
+        <PropertyRef Name="idUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AlumnoAct__idAct__5441852A">
+    <End Role="Actividad" Type="Self.Actividad" Multiplicity="1" />
+    <End Role="AlumnoActividad" Type="Self.AlumnoActividad" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Actividad">
+        <PropertyRef Name="idActividad" />
+      </Principal>
+      <Dependent Role="AlumnoActividad">
+        <PropertyRef Name="idActividad" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AlumnoAct__idAlu__534D60F1">
+    <End Role="Alumno" Type="Self.Alumno" Multiplicity="1" />
+    <End Role="AlumnoActividad" Type="Self.AlumnoActividad" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Alumno">
+        <PropertyRef Name="idAlumno" />
+      </Principal>
+      <Dependent Role="AlumnoActividad">
+        <PropertyRef Name="idAlumno" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AlumnoAsi__idAlu__59063A47">
+    <End Role="Alumno" Type="Self.Alumno" Multiplicity="1" />
+    <End Role="AlumnoAsistencia" Type="Self.AlumnoAsistencia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Alumno">
+        <PropertyRef Name="idAlumno" />
+      </Principal>
+      <Dependent Role="AlumnoAsistencia">
+        <PropertyRef Name="idAlumno" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AlumnoAsi__idAsi__1332DBDC">
+    <End Role="Asistencia" Type="Self.Asistencia" Multiplicity="1" />
+    <End Role="AlumnoAsistencia" Type="Self.AlumnoAsistencia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Asistencia">
+        <PropertyRef Name="idAsistencia" />
+      </Principal>
+      <Dependent Role="AlumnoAsistencia">
+        <PropertyRef Name="idAsistencia" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AlumnoCal__idAlu__5EBF139D">
+    <End Role="Alumno" Type="Self.Alumno" Multiplicity="1" />
+    <End Role="AlumnoCalificacion" Type="Self.AlumnoCalificacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Alumno">
+        <PropertyRef Name="idAlumno" />
+      </Principal>
+      <Dependent Role="AlumnoCalificacion">
+        <PropertyRef Name="idAlumno" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AlumnoCal__idCal__151B244E">
+    <End Role="Calificacion" Type="Self.Calificacion" Multiplicity="1" />
+    <End Role="AlumnoCalificacion" Type="Self.AlumnoCalificacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Calificacion">
+        <PropertyRef Name="idCalificacion" />
+      </Principal>
+      <Dependent Role="AlumnoCalificacion">
+        <PropertyRef Name="idCalificacion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AlumnoGru__idAlu__4D94879B">
+    <End Role="Alumno" Type="Self.Alumno" Multiplicity="1" />
+    <End Role="AlumnoGrupo" Type="Self.AlumnoGrupo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Alumno">
+        <PropertyRef Name="idAlumno" />
+      </Principal>
+      <Dependent Role="AlumnoGrupo">
+        <PropertyRef Name="idAlumno" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__CicloEsco__idCic__18EBB532">
+    <End Role="CicloEscolar" Type="Self.CicloEscolar" Multiplicity="1" />
+    <End Role="CicloEscolarGrupo" Type="Self.CicloEscolarGrupo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CicloEscolar">
+        <PropertyRef Name="idCicloEscolar" />
+      </Principal>
+      <Dependent Role="CicloEscolarGrupo">
+        <PropertyRef Name="idCicloEscolar" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__CicloEsco__idCic__1AD3FDA4">
+    <End Role="CicloEscolar" Type="Self.CicloEscolar" Multiplicity="1" />
+    <End Role="CicloEscolarPlan" Type="Self.CicloEscolarPlan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CicloEscolar">
+        <PropertyRef Name="idCicloEscolar" />
+      </Principal>
+      <Dependent Role="CicloEscolarPlan">
+        <PropertyRef Name="idCicloEscolar" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__CicloEsco__idPla__71D1E811">
+    <End Role="PlanDeEstudio" Type="Self.PlanDeEstudio" Multiplicity="1" />
+    <End Role="CicloEscolarPlan" Type="Self.CicloEscolarPlan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PlanDeEstudio">
+        <PropertyRef Name="idPlanEstudio" />
+      </Principal>
+      <Dependent Role="CicloEscolarPlan">
+        <PropertyRef Name="idPlanEstudio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Docente__idUsuar__182C9B23">
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="1" />
+    <End Role="Docente" Type="Self.Docente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="idUsuario" />
+      </Principal>
+      <Dependent Role="Docente">
+        <PropertyRef Name="idUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DocenteGr__idDoc__47DBAE45">
+    <End Role="Docente" Type="Self.Docente" Multiplicity="1" />
+    <End Role="DocenteGrupo" Type="Self.DocenteGrupo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Docente">
+        <PropertyRef Name="idDocente" />
+      </Principal>
+      <Dependent Role="DocenteGrupo">
+        <PropertyRef Name="idDocente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DocenteMa__idDoc__1F98B2C1">
+    <End Role="Docente" Type="Self.Docente" Multiplicity="1" />
+    <End Role="DocenteMateria" Type="Self.DocenteMateria" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Docente">
+        <PropertyRef Name="idDocente" />
+      </Principal>
+      <Dependent Role="DocenteMateria">
+        <PropertyRef Name="idDocente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DocenteMa__idMat__4316F928">
+    <End Role="Materia" Type="Self.Materia" Multiplicity="1" />
+    <End Role="DocenteMateria" Type="Self.DocenteMateria" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Materia">
+        <PropertyRef Name="idMateria" />
+      </Principal>
+      <Dependent Role="DocenteMateria">
+        <PropertyRef Name="idMateria" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PadreAlum__idAlu__66603565">
+    <End Role="Alumno" Type="Self.Alumno" Multiplicity="1" />
+    <End Role="PadreAlumno" Type="Self.PadreAlumno" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Alumno">
+        <PropertyRef Name="idAlumno" />
+      </Principal>
+      <Dependent Role="PadreAlumno">
+        <PropertyRef Name="idAlumno" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PadreAlum__idPad__2645B050">
+    <End Role="PadreDeFamilia" Type="Self.PadreDeFamilia" Multiplicity="0..1" />
+    <End Role="PadreAlumno" Type="Self.PadreAlumno" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PadreDeFamilia">
+        <PropertyRef Name="idPadre" />
+      </Principal>
+      <Dependent Role="PadreAlumno">
+        <PropertyRef Name="idPadre" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PadreDeFa__idUsu__21B6055D">
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="0..1" />
+    <End Role="PadreDeFamilia" Type="Self.PadreDeFamilia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="idUsuario" />
+      </Principal>
+      <Dependent Role="PadreDeFamilia">
+        <PropertyRef Name="idUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__UsuarioRo__idRol__09DE7BCC">
+    <End Role="Rol" Type="Self.Rol" Multiplicity="1" />
+    <End Role="UsuarioRol" Type="Self.UsuarioRol" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Rol">
+        <PropertyRef Name="idRol" />
+      </Principal>
+      <Dependent Role="UsuarioRol">
+        <PropertyRef Name="idRol" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__UsuarioRo__idUsu__08EA5793">
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="1" />
+    <End Role="UsuarioRol" Type="Self.UsuarioRol" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="idUsuario" />
+      </Principal>
+      <Dependent Role="UsuarioRol">
+        <PropertyRef Name="idUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Actividad_Docente">
+    <End Role="Docente" Type="Self.Docente" Multiplicity="1" />
+    <End Role="Actividad" Type="Self.Actividad" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Docente">
+        <PropertyRef Name="idDocente" />
+      </Principal>
+      <Dependent Role="Actividad">
+        <PropertyRef Name="idDocente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Actividad_DocenteGrupo">
+    <End Role="DocenteGrupo" Type="Self.DocenteGrupo" Multiplicity="0..1" />
+    <End Role="Actividad" Type="Self.Actividad" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DocenteGrupo">
+        <PropertyRef Name="idDocenteGrupo" />
+      </Principal>
+      <Dependent Role="Actividad">
+        <PropertyRef Name="idDocenteGrupo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Actividad_DocenteMateria">
+    <End Role="DocenteMateria" Type="Self.DocenteMateria" Multiplicity="1" />
+    <End Role="Actividad" Type="Self.Actividad" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DocenteMateria">
+        <PropertyRef Name="IdDocMat" />
+      </Principal>
+      <Dependent Role="Actividad">
+        <PropertyRef Name="idDocMat" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Alumno_nivel">
+    <End Role="nivel" Type="Self.nivel" Multiplicity="1" />
+    <End Role="Alumno" Type="Self.Alumno" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="nivel">
+        <PropertyRef Name="idNivel" />
+      </Principal>
+      <Dependent Role="Alumno">
+        <PropertyRef Name="IdNivel" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AlumnoActividad_CicloEscolar">
+    <End Role="CicloEscolar" Type="Self.CicloEscolar" Multiplicity="1" />
+    <End Role="AlumnoActividad" Type="Self.AlumnoActividad" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CicloEscolar">
+        <PropertyRef Name="idCicloEscolar" />
+      </Principal>
+      <Dependent Role="AlumnoActividad">
+        <PropertyRef Name="idCicloEscolar" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AlumnoAsistencia_CicloEscolar">
+    <End Role="CicloEscolar" Type="Self.CicloEscolar" Multiplicity="1" />
+    <End Role="AlumnoAsistencia" Type="Self.AlumnoAsistencia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CicloEscolar">
+        <PropertyRef Name="idCicloEscolar" />
+      </Principal>
+      <Dependent Role="AlumnoAsistencia">
+        <PropertyRef Name="idCicloEscolar" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AlumnoCalificacion_CicloEscolar">
+    <End Role="CicloEscolar" Type="Self.CicloEscolar" Multiplicity="1" />
+    <End Role="AlumnoCalificacion" Type="Self.AlumnoCalificacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CicloEscolar">
+        <PropertyRef Name="idCicloEscolar" />
+      </Principal>
+      <Dependent Role="AlumnoCalificacion">
+        <PropertyRef Name="idCicloEscolar" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AlumnoCalificacion_DocenteGrupo">
+    <End Role="DocenteGrupo" Type="Self.DocenteGrupo" Multiplicity="1" />
+    <End Role="AlumnoCalificacion" Type="Self.AlumnoCalificacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DocenteGrupo">
+        <PropertyRef Name="idDocenteGrupo" />
+      </Principal>
+      <Dependent Role="AlumnoCalificacion">
+        <PropertyRef Name="idDocenteGrupo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AlumnoGrupo_Grado_Grupo">
+    <End Role="Grado_Grupo" Type="Self.Grado_Grupo" Multiplicity="1" />
+    <End Role="AlumnoGrupo" Type="Self.AlumnoGrupo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Grado_Grupo">
+        <PropertyRef Name="idGradoGrupo" />
+      </Principal>
+      <Dependent Role="AlumnoGrupo">
+        <PropertyRef Name="idGradoGrupo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Asistencia_DocenteGrupo">
+    <End Role="DocenteGrupo" Type="Self.DocenteGrupo" Multiplicity="1" />
+    <End Role="Asistencia" Type="Self.Asistencia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DocenteGrupo">
+        <PropertyRef Name="idDocenteGrupo" />
+      </Principal>
+      <Dependent Role="Asistencia">
+        <PropertyRef Name="idGradoGrupo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Asistencia_Grado_Grupo">
+    <End Role="Grado_Grupo" Type="Self.Grado_Grupo" Multiplicity="1" />
+    <End Role="Asistencia" Type="Self.Asistencia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Grado_Grupo">
+        <PropertyRef Name="idGradoGrupo" />
+      </Principal>
+      <Dependent Role="Asistencia">
+        <PropertyRef Name="idGradoGrupo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Asistencia_Presente">
+    <End Role="Presente" Type="Self.Presente" Multiplicity="1" />
+    <End Role="Asistencia" Type="Self.Asistencia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Presente">
+        <PropertyRef Name="idPresente" />
+      </Principal>
+      <Dependent Role="Asistencia">
+        <PropertyRef Name="idPresente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CicloEscolar_Estatus">
+    <End Role="Estatus" Type="Self.Estatus" Multiplicity="1" />
+    <End Role="CicloEscolar" Type="Self.CicloEscolar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Estatus">
+        <PropertyRef Name="idestado" />
+      </Principal>
+      <Dependent Role="CicloEscolar">
+        <PropertyRef Name="estado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CicloEscolarGrupo_Grado_Grupo">
+    <End Role="Grado_Grupo" Type="Self.Grado_Grupo" Multiplicity="1" />
+    <End Role="CicloEscolarGrupo" Type="Self.CicloEscolarGrupo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Grado_Grupo">
+        <PropertyRef Name="idGradoGrupo" />
+      </Principal>
+      <Dependent Role="CicloEscolarGrupo">
+        <PropertyRef Name="idGradoGrupo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Criterios_Materia">
+    <End Role="Materia" Type="Self.Materia" Multiplicity="1" />
+    <End Role="Criterios" Type="Self.Criterios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Materia">
+        <PropertyRef Name="idMateria" />
+      </Principal>
+      <Dependent Role="Criterios">
+        <PropertyRef Name="idMateria" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DocenteGrupo_DocenteMateria">
+    <End Role="DocenteMateria" Type="Self.DocenteMateria" Multiplicity="0..1" />
+    <End Role="DocenteGrupo" Type="Self.DocenteGrupo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DocenteMateria">
+        <PropertyRef Name="IdDocMat" />
+      </Principal>
+      <Dependent Role="DocenteGrupo">
+        <PropertyRef Name="idDocMat" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DocenteGrupo_Grado_Grupo">
+    <End Role="Grado_Grupo" Type="Self.Grado_Grupo" Multiplicity="1" />
+    <End Role="DocenteGrupo" Type="Self.DocenteGrupo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Grado_Grupo">
+        <PropertyRef Name="idGradoGrupo" />
+      </Principal>
+      <Dependent Role="DocenteGrupo">
+        <PropertyRef Name="idGradoGrupo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Examen_DocenteGrupo">
+    <End Role="DocenteGrupo" Type="Self.DocenteGrupo" Multiplicity="0..1" />
+    <End Role="Examen" Type="Self.Examen" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DocenteGrupo">
+        <PropertyRef Name="idDocenteGrupo" />
+      </Principal>
+      <Dependent Role="Examen">
+        <PropertyRef Name="idDocenteGrupo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Examen_DocenteMateria">
+    <End Role="DocenteMateria" Type="Self.DocenteMateria" Multiplicity="1" />
+    <End Role="Examen" Type="Self.Examen" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DocenteMateria">
+        <PropertyRef Name="IdDocMat" />
+      </Principal>
+      <Dependent Role="Examen">
+        <PropertyRef Name="idDocMateria" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ExamenAlumno_Alumno">
+    <End Role="Alumno" Type="Self.Alumno" Multiplicity="1" />
+    <End Role="ExamenAlumno" Type="Self.ExamenAlumno" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Alumno">
+        <PropertyRef Name="idAlumno" />
+      </Principal>
+      <Dependent Role="ExamenAlumno">
+        <PropertyRef Name="idAlumno" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ExamenAlumno_CicloEscolar">
+    <End Role="CicloEscolar" Type="Self.CicloEscolar" Multiplicity="1" />
+    <End Role="ExamenAlumno" Type="Self.ExamenAlumno" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CicloEscolar">
+        <PropertyRef Name="idCicloEscolar" />
+      </Principal>
+      <Dependent Role="ExamenAlumno">
+        <PropertyRef Name="idCicloEscolar" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ExamenAlumno_Examen">
+    <End Role="Examen" Type="Self.Examen" Multiplicity="1" />
+    <End Role="ExamenAlumno" Type="Self.ExamenAlumno" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Examen">
+        <PropertyRef Name="idExamen" />
+      </Principal>
+      <Dependent Role="ExamenAlumno">
+        <PropertyRef Name="idExamen" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Grado_Grupo_Grado">
+    <End Role="Grado" Type="Self.Grado" Multiplicity="1" />
+    <End Role="Grado_Grupo" Type="Self.Grado_Grupo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Grado">
+        <PropertyRef Name="idGrado" />
+      </Principal>
+      <Dependent Role="Grado_Grupo">
+        <PropertyRef Name="idGrado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Grado_Grupo_Grupo">
+    <End Role="Grupo" Type="Self.Grupo" Multiplicity="1" />
+    <End Role="Grado_Grupo" Type="Self.Grado_Grupo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Grupo">
+        <PropertyRef Name="idGrupo" />
+      </Principal>
+      <Dependent Role="Grado_Grupo">
+        <PropertyRef Name="idGrupo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Grado_Grupo_nivel">
+    <End Role="nivel" Type="Self.nivel" Multiplicity="1" />
+    <End Role="Grado_Grupo" Type="Self.Grado_Grupo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="nivel">
+        <PropertyRef Name="idNivel" />
+      </Principal>
+      <Dependent Role="Grado_Grupo">
+        <PropertyRef Name="idNivel" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_nivel_UsuarioRol">
+    <End Role="UsuarioRol" Type="Self.UsuarioRol" Multiplicity="0..1" />
+    <End Role="nivel" Type="Self.nivel" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UsuarioRol">
+        <PropertyRef Name="idUsuarioRol" />
+      </Principal>
+      <Dependent Role="nivel">
+        <PropertyRef Name="IdRolCoordinador" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tarea_DocenteGrupo">
+    <End Role="DocenteGrupo" Type="Self.DocenteGrupo" Multiplicity="0..1" />
+    <End Role="Tarea" Type="Self.Tarea" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DocenteGrupo">
+        <PropertyRef Name="idDocenteGrupo" />
+      </Principal>
+      <Dependent Role="Tarea">
+        <PropertyRef Name="idDocenteGrupo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tarea_DocenteMateria">
+    <End Role="DocenteMateria" Type="Self.DocenteMateria" Multiplicity="1" />
+    <End Role="Tarea" Type="Self.Tarea" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DocenteMateria">
+        <PropertyRef Name="IdDocMat" />
+      </Principal>
+      <Dependent Role="Tarea">
+        <PropertyRef Name="idDocMat" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TareaAlumno_Alumno">
+    <End Role="Alumno" Type="Self.Alumno" Multiplicity="1" />
+    <End Role="TareaAlumno" Type="Self.TareaAlumno" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Alumno">
+        <PropertyRef Name="idAlumno" />
+      </Principal>
+      <Dependent Role="TareaAlumno">
+        <PropertyRef Name="idAlumno" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TareaAlumno_CicloEscolar">
+    <End Role="CicloEscolar" Type="Self.CicloEscolar" Multiplicity="1" />
+    <End Role="TareaAlumno" Type="Self.TareaAlumno" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CicloEscolar">
+        <PropertyRef Name="idCicloEscolar" />
+      </Principal>
+      <Dependent Role="TareaAlumno">
+        <PropertyRef Name="idCicloEscolar" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TareaAlumno_Tarea">
+    <End Role="Tarea" Type="Self.Tarea" Multiplicity="1" />
+    <End Role="TareaAlumno" Type="Self.TareaAlumno" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tarea">
+        <PropertyRef Name="idTarea" />
+      </Principal>
+      <Dependent Role="TareaAlumno">
+        <PropertyRef Name="idTarea" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="vhmexMejoradaStoreContainer">
+    <EntitySet Name="Actividad" EntityType="Self.Actividad" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Alumno" EntityType="Self.Alumno" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AlumnoActividad" EntityType="Self.AlumnoActividad" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AlumnoAsistencia" EntityType="Self.AlumnoAsistencia" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AlumnoCalificacion" EntityType="Self.AlumnoCalificacion" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AlumnoGrupo" EntityType="Self.AlumnoGrupo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Asistencia" EntityType="Self.Asistencia" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Calificacion" EntityType="Self.Calificacion" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CicloEscolar" EntityType="Self.CicloEscolar" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CicloEscolarGrupo" EntityType="Self.CicloEscolarGrupo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CicloEscolarPlan" EntityType="Self.CicloEscolarPlan" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Criterios" EntityType="Self.Criterios" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Docente" EntityType="Self.Docente" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DocenteGrupo" EntityType="Self.DocenteGrupo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DocenteMateria" EntityType="Self.DocenteMateria" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Estatus" EntityType="Self.Estatus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Examen" EntityType="Self.Examen" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ExamenAlumno" EntityType="Self.ExamenAlumno" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Grado" EntityType="Self.Grado" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Grado_Grupo" EntityType="Self.Grado_Grupo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Grupo" EntityType="Self.Grupo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Materia" EntityType="Self.Materia" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="nivel" EntityType="Self.nivel" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PadreAlumno" EntityType="Self.PadreAlumno" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PadreDeFamilia" EntityType="Self.PadreDeFamilia" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PlanDeEstudio" EntityType="Self.PlanDeEstudio" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Presente" EntityType="Self.Presente" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Rol" EntityType="Self.Rol" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tarea" EntityType="Self.Tarea" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TareaAlumno" EntityType="Self.TareaAlumno" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Usuario" EntityType="Self.Usuario" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UsuarioRol" EntityType="Self.UsuarioRol" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Alumno__idUsuari__1CF15040" Association="Self.FK__Alumno__idUsuari__1CF15040">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="Alumno" EntitySet="Alumno" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AlumnoAct__idAct__5441852A" Association="Self.FK__AlumnoAct__idAct__5441852A">
+      <End Role="Actividad" EntitySet="Actividad" />
+      <End Role="AlumnoActividad" EntitySet="AlumnoActividad" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AlumnoAct__idAlu__534D60F1" Association="Self.FK__AlumnoAct__idAlu__534D60F1">
+      <End Role="Alumno" EntitySet="Alumno" />
+      <End Role="AlumnoActividad" EntitySet="AlumnoActividad" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AlumnoAsi__idAlu__59063A47" Association="Self.FK__AlumnoAsi__idAlu__59063A47">
+      <End Role="Alumno" EntitySet="Alumno" />
+      <End Role="AlumnoAsistencia" EntitySet="AlumnoAsistencia" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AlumnoAsi__idAsi__1332DBDC" Association="Self.FK__AlumnoAsi__idAsi__1332DBDC">
+      <End Role="Asistencia" EntitySet="Asistencia" />
+      <End Role="AlumnoAsistencia" EntitySet="AlumnoAsistencia" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AlumnoCal__idAlu__5EBF139D" Association="Self.FK__AlumnoCal__idAlu__5EBF139D">
+      <End Role="Alumno" EntitySet="Alumno" />
+      <End Role="AlumnoCalificacion" EntitySet="AlumnoCalificacion" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AlumnoCal__idCal__151B244E" Association="Self.FK__AlumnoCal__idCal__151B244E">
+      <End Role="Calificacion" EntitySet="Calificacion" />
+      <End Role="AlumnoCalificacion" EntitySet="AlumnoCalificacion" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AlumnoGru__idAlu__4D94879B" Association="Self.FK__AlumnoGru__idAlu__4D94879B">
+      <End Role="Alumno" EntitySet="Alumno" />
+      <End Role="AlumnoGrupo" EntitySet="AlumnoGrupo" />
+    </AssociationSet>
+    <AssociationSet Name="FK__CicloEsco__idCic__18EBB532" Association="Self.FK__CicloEsco__idCic__18EBB532">
+      <End Role="CicloEscolar" EntitySet="CicloEscolar" />
+      <End Role="CicloEscolarGrupo" EntitySet="CicloEscolarGrupo" />
+    </AssociationSet>
+    <AssociationSet Name="FK__CicloEsco__idCic__1AD3FDA4" Association="Self.FK__CicloEsco__idCic__1AD3FDA4">
+      <End Role="CicloEscolar" EntitySet="CicloEscolar" />
+      <End Role="CicloEscolarPlan" EntitySet="CicloEscolarPlan" />
+    </AssociationSet>
+    <AssociationSet Name="FK__CicloEsco__idPla__71D1E811" Association="Self.FK__CicloEsco__idPla__71D1E811">
+      <End Role="PlanDeEstudio" EntitySet="PlanDeEstudio" />
+      <End Role="CicloEscolarPlan" EntitySet="CicloEscolarPlan" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Docente__idUsuar__182C9B23" Association="Self.FK__Docente__idUsuar__182C9B23">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="Docente" EntitySet="Docente" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DocenteGr__idDoc__47DBAE45" Association="Self.FK__DocenteGr__idDoc__47DBAE45">
+      <End Role="Docente" EntitySet="Docente" />
+      <End Role="DocenteGrupo" EntitySet="DocenteGrupo" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DocenteMa__idDoc__1F98B2C1" Association="Self.FK__DocenteMa__idDoc__1F98B2C1">
+      <End Role="Docente" EntitySet="Docente" />
+      <End Role="DocenteMateria" EntitySet="DocenteMateria" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DocenteMa__idMat__4316F928" Association="Self.FK__DocenteMa__idMat__4316F928">
+      <End Role="Materia" EntitySet="Materia" />
+      <End Role="DocenteMateria" EntitySet="DocenteMateria" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PadreAlum__idAlu__66603565" Association="Self.FK__PadreAlum__idAlu__66603565">
+      <End Role="Alumno" EntitySet="Alumno" />
+      <End Role="PadreAlumno" EntitySet="PadreAlumno" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PadreAlum__idPad__2645B050" Association="Self.FK__PadreAlum__idPad__2645B050">
+      <End Role="PadreDeFamilia" EntitySet="PadreDeFamilia" />
+      <End Role="PadreAlumno" EntitySet="PadreAlumno" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PadreDeFa__idUsu__21B6055D" Association="Self.FK__PadreDeFa__idUsu__21B6055D">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="PadreDeFamilia" EntitySet="PadreDeFamilia" />
+    </AssociationSet>
+    <AssociationSet Name="FK__UsuarioRo__idRol__09DE7BCC" Association="Self.FK__UsuarioRo__idRol__09DE7BCC">
+      <End Role="Rol" EntitySet="Rol" />
+      <End Role="UsuarioRol" EntitySet="UsuarioRol" />
+    </AssociationSet>
+    <AssociationSet Name="FK__UsuarioRo__idUsu__08EA5793" Association="Self.FK__UsuarioRo__idUsu__08EA5793">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="UsuarioRol" EntitySet="UsuarioRol" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Actividad_Docente" Association="Self.FK_Actividad_Docente">
+      <End Role="Docente" EntitySet="Docente" />
+      <End Role="Actividad" EntitySet="Actividad" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Actividad_DocenteGrupo" Association="Self.FK_Actividad_DocenteGrupo">
+      <End Role="DocenteGrupo" EntitySet="DocenteGrupo" />
+      <End Role="Actividad" EntitySet="Actividad" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Actividad_DocenteMateria" Association="Self.FK_Actividad_DocenteMateria">
+      <End Role="DocenteMateria" EntitySet="DocenteMateria" />
+      <End Role="Actividad" EntitySet="Actividad" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Alumno_nivel" Association="Self.FK_Alumno_nivel">
+      <End Role="nivel" EntitySet="nivel" />
+      <End Role="Alumno" EntitySet="Alumno" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AlumnoActividad_CicloEscolar" Association="Self.FK_AlumnoActividad_CicloEscolar">
+      <End Role="CicloEscolar" EntitySet="CicloEscolar" />
+      <End Role="AlumnoActividad" EntitySet="AlumnoActividad" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AlumnoAsistencia_CicloEscolar" Association="Self.FK_AlumnoAsistencia_CicloEscolar">
+      <End Role="CicloEscolar" EntitySet="CicloEscolar" />
+      <End Role="AlumnoAsistencia" EntitySet="AlumnoAsistencia" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AlumnoCalificacion_CicloEscolar" Association="Self.FK_AlumnoCalificacion_CicloEscolar">
+      <End Role="CicloEscolar" EntitySet="CicloEscolar" />
+      <End Role="AlumnoCalificacion" EntitySet="AlumnoCalificacion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AlumnoCalificacion_DocenteGrupo" Association="Self.FK_AlumnoCalificacion_DocenteGrupo">
+      <End Role="DocenteGrupo" EntitySet="DocenteGrupo" />
+      <End Role="AlumnoCalificacion" EntitySet="AlumnoCalificacion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AlumnoGrupo_Grado_Grupo" Association="Self.FK_AlumnoGrupo_Grado_Grupo">
+      <End Role="Grado_Grupo" EntitySet="Grado_Grupo" />
+      <End Role="AlumnoGrupo" EntitySet="AlumnoGrupo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Asistencia_DocenteGrupo" Association="Self.FK_Asistencia_DocenteGrupo">
+      <End Role="DocenteGrupo" EntitySet="DocenteGrupo" />
+      <End Role="Asistencia" EntitySet="Asistencia" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Asistencia_Grado_Grupo" Association="Self.FK_Asistencia_Grado_Grupo">
+      <End Role="Grado_Grupo" EntitySet="Grado_Grupo" />
+      <End Role="Asistencia" EntitySet="Asistencia" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Asistencia_Presente" Association="Self.FK_Asistencia_Presente">
+      <End Role="Presente" EntitySet="Presente" />
+      <End Role="Asistencia" EntitySet="Asistencia" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CicloEscolar_Estatus" Association="Self.FK_CicloEscolar_Estatus">
+      <End Role="Estatus" EntitySet="Estatus" />
+      <End Role="CicloEscolar" EntitySet="CicloEscolar" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CicloEscolarGrupo_Grado_Grupo" Association="Self.FK_CicloEscolarGrupo_Grado_Grupo">
+      <End Role="Grado_Grupo" EntitySet="Grado_Grupo" />
+      <End Role="CicloEscolarGrupo" EntitySet="CicloEscolarGrupo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Criterios_Materia" Association="Self.FK_Criterios_Materia">
+      <End Role="Materia" EntitySet="Materia" />
+      <End Role="Criterios" EntitySet="Criterios" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DocenteGrupo_DocenteMateria" Association="Self.FK_DocenteGrupo_DocenteMateria">
+      <End Role="DocenteMateria" EntitySet="DocenteMateria" />
+      <End Role="DocenteGrupo" EntitySet="DocenteGrupo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DocenteGrupo_Grado_Grupo" Association="Self.FK_DocenteGrupo_Grado_Grupo">
+      <End Role="Grado_Grupo" EntitySet="Grado_Grupo" />
+      <End Role="DocenteGrupo" EntitySet="DocenteGrupo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Examen_DocenteGrupo" Association="Self.FK_Examen_DocenteGrupo">
+      <End Role="DocenteGrupo" EntitySet="DocenteGrupo" />
+      <End Role="Examen" EntitySet="Examen" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Examen_DocenteMateria" Association="Self.FK_Examen_DocenteMateria">
+      <End Role="DocenteMateria" EntitySet="DocenteMateria" />
+      <End Role="Examen" EntitySet="Examen" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ExamenAlumno_Alumno" Association="Self.FK_ExamenAlumno_Alumno">
+      <End Role="Alumno" EntitySet="Alumno" />
+      <End Role="ExamenAlumno" EntitySet="ExamenAlumno" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ExamenAlumno_CicloEscolar" Association="Self.FK_ExamenAlumno_CicloEscolar">
+      <End Role="CicloEscolar" EntitySet="CicloEscolar" />
+      <End Role="ExamenAlumno" EntitySet="ExamenAlumno" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ExamenAlumno_Examen" Association="Self.FK_ExamenAlumno_Examen">
+      <End Role="Examen" EntitySet="Examen" />
+      <End Role="ExamenAlumno" EntitySet="ExamenAlumno" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Grado_Grupo_Grado" Association="Self.FK_Grado_Grupo_Grado">
+      <End Role="Grado" EntitySet="Grado" />
+      <End Role="Grado_Grupo" EntitySet="Grado_Grupo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Grado_Grupo_Grupo" Association="Self.FK_Grado_Grupo_Grupo">
+      <End Role="Grupo" EntitySet="Grupo" />
+      <End Role="Grado_Grupo" EntitySet="Grado_Grupo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Grado_Grupo_nivel" Association="Self.FK_Grado_Grupo_nivel">
+      <End Role="nivel" EntitySet="nivel" />
+      <End Role="Grado_Grupo" EntitySet="Grado_Grupo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_nivel_UsuarioRol" Association="Self.FK_nivel_UsuarioRol">
+      <End Role="UsuarioRol" EntitySet="UsuarioRol" />
+      <End Role="nivel" EntitySet="nivel" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tarea_DocenteGrupo" Association="Self.FK_Tarea_DocenteGrupo">
+      <End Role="DocenteGrupo" EntitySet="DocenteGrupo" />
+      <End Role="Tarea" EntitySet="Tarea" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tarea_DocenteMateria" Association="Self.FK_Tarea_DocenteMateria">
+      <End Role="DocenteMateria" EntitySet="DocenteMateria" />
+      <End Role="Tarea" EntitySet="Tarea" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TareaAlumno_Alumno" Association="Self.FK_TareaAlumno_Alumno">
+      <End Role="Alumno" EntitySet="Alumno" />
+      <End Role="TareaAlumno" EntitySet="TareaAlumno" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TareaAlumno_CicloEscolar" Association="Self.FK_TareaAlumno_CicloEscolar">
+      <End Role="CicloEscolar" EntitySet="CicloEscolar" />
+      <End Role="TareaAlumno" EntitySet="TareaAlumno" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TareaAlumno_Tarea" Association="Self.FK_TareaAlumno_Tarea">
+      <End Role="Tarea" EntitySet="Tarea" />
+      <End Role="TareaAlumno" EntitySet="TareaAlumno" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

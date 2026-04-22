@@ -1,0 +1,355 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FA345C74-1255-42BC-8B0D-569D9A0682B2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SistemaEscolar</RootNamespace>
+    <AssemblyName>SistemaEscolar</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AltaGrupo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltaGrupo.Designer.cs">
+      <DependentUpon>AltaGrupo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AltaMaterias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltaMaterias.Designer.cs">
+      <DependentUpon>AltaMaterias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AltaUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltaUsuarios.Designer.cs">
+      <DependentUpon>AltaUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlumnosGrupos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlumnosGrupos.Designer.cs">
+      <DependentUpon>AlumnosGrupos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asistencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Asistencia.Designer.cs">
+      <DependentUpon>Asistencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CalificarActividades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalificarActividades.Designer.cs">
+      <DependentUpon>CalificarActividades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CambiarCalificaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CambiarCalificaciones.Designer.cs">
+      <DependentUpon>CambiarCalificaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Criterios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Criterios.Designer.cs">
+      <DependentUpon>Criterios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DocenteGrupos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocenteGrupos.Designer.cs">
+      <DependentUpon>DocenteGrupos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Calificaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calificaciones.Designer.cs">
+      <DependentUpon>Calificaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DocenteMaterias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocenteMaterias.Designer.cs">
+      <DependentUpon>DocenteMaterias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarUsuarios.Designer.cs">
+      <DependentUpon>ModificarUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NuevoGrupo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NuevoGrupo.Designer.cs">
+      <DependentUpon>NuevoGrupo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PadresAlumnos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PadresAlumnos.Designer.cs">
+      <DependentUpon>PadresAlumnos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReporteActividades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteActividades.Designer.cs">
+      <DependentUpon>ReporteActividades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Roles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Roles.Designer.cs">
+      <DependentUpon>Roles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SesionAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SesionAdmin.Designer.cs">
+      <DependentUpon>SesionAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SesionAlumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SesionAlumno.Designer.cs">
+      <DependentUpon>SesionAlumno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SesionCoordinador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SesionCoordinador.Designer.cs">
+      <DependentUpon>SesionCoordinador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SesionMaestro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SesionMaestro.Designer.cs">
+      <DependentUpon>SesionMaestro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SesionPadre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SesionPadre.Designer.cs">
+      <DependentUpon>SesionPadre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TareasActividades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TareasActividades.Designer.cs">
+      <DependentUpon>TareasActividades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TareasActividadesAlumnos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TareasActividadesAlumnos.Designer.cs">
+      <DependentUpon>TareasActividadesAlumnos.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AltaGrupo.resx">
+      <DependentUpon>AltaGrupo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AltaMaterias.resx">
+      <DependentUpon>AltaMaterias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AltaUsuarios.resx">
+      <DependentUpon>AltaUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlumnosGrupos.resx">
+      <DependentUpon>AlumnosGrupos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Asistencia.resx">
+      <DependentUpon>Asistencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalificarActividades.resx">
+      <DependentUpon>CalificarActividades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CambiarCalificaciones.resx">
+      <DependentUpon>CambiarCalificaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Criterios.resx">
+      <DependentUpon>Criterios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocenteGrupos.resx">
+      <DependentUpon>DocenteGrupos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calificaciones.resx">
+      <DependentUpon>Calificaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocenteMaterias.resx">
+      <DependentUpon>DocenteMaterias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarUsuarios.resx">
+      <DependentUpon>ModificarUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NuevoGrupo.resx">
+      <DependentUpon>NuevoGrupo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PadresAlumnos.resx">
+      <DependentUpon>PadresAlumnos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ReporteActividades.resx">
+      <DependentUpon>ReporteActividades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Roles.resx">
+      <DependentUpon>Roles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SesionAdmin.resx">
+      <DependentUpon>SesionAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SesionAlumno.resx">
+      <DependentUpon>SesionAlumno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SesionCoordinador.resx">
+      <DependentUpon>SesionCoordinador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SesionMaestro.resx">
+      <DependentUpon>SesionMaestro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SesionPadre.resx">
+      <DependentUpon>SesionPadre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TareasActividades.resx">
+      <DependentUpon>TareasActividades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TareasActividadesAlumnos.resx">
+      <DependentUpon>TareasActividadesAlumnos.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Controllers\Controllers.csproj">
+      <Project>{4e8d07e5-a8dd-43cb-8abb-870d93f3c45e}</Project>
+      <Name>Controllers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Models\Models.csproj">
+      <Project>{b2c893b4-6709-419d-ad36-b4c943362c85}</Project>
+      <Name>Models</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\form1\fondo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\form1\sesion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\form1\contra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\form1\fondoMejorado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\Compartido\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\form1\Login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\Compartido\silla.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\Alumno\pdf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\Alumno\Microsoft-Excel-Logo-2013.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="imagenes\Alumno\Salon.png" />
+    <Content Include="imagenes\Login\Candado.png" />
+    <Content Include="imagenes\Login\Panel Login.png" />
+    <Content Include="imagenes\Login\Usuario Login.png" />
+    <Content Include="imagenes\Login\Usuario.png" />
+    <Content Include="imagenes\Login\Valle Hermoso.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+</Project>

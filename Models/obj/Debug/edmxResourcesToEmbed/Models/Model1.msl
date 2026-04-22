@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="VHMEXModelStoreContainer" CdmEntityContainer="VHMEXEntities">
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="VHMEXModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_actividades">
+      <EntityTypeMapping TypeName="VHMEXModel.tbl_actividades">
+        <MappingFragment StoreEntitySet="tbl_actividades">
+          <ScalarProperty Name="idActividades" ColumnName="idActividades" />
+          <ScalarProperty Name="fechainicio" ColumnName="fechainicio" />
+          <ScalarProperty Name="fechaEntrega" ColumnName="fechaEntrega" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="puntos" ColumnName="puntos" />
+          <ScalarProperty Name="valor" ColumnName="valor" />
+          <ScalarProperty Name="idMateria" ColumnName="idMateria" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Asistencia">
+      <EntityTypeMapping TypeName="VHMEXModel.tbl_Asistencia">
+        <MappingFragment StoreEntitySet="tbl_Asistencia">
+          <ScalarProperty Name="idAsistencia" ColumnName="idAsistencia" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="idEvaluacion" ColumnName="idEvaluacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_criteriosDeEvaluacion">
+      <EntityTypeMapping TypeName="VHMEXModel.tbl_criteriosDeEvaluacion">
+        <MappingFragment StoreEntitySet="tbl_criteriosDeEvaluacion">
+          <ScalarProperty Name="idCriterio" ColumnName="idCriterio" />
+          <ScalarProperty Name="criterio" ColumnName="criterio" />
+          <ScalarProperty Name="porcentaje" ColumnName="porcentaje" />
+          <ScalarProperty Name="idMateria" ColumnName="idMateria" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_evaluacion">
+      <EntityTypeMapping TypeName="VHMEXModel.tbl_evaluacion">
+        <MappingFragment StoreEntitySet="tbl_evaluacion">
+          <ScalarProperty Name="idEvaluacion" ColumnName="idEvaluacion" />
+          <ScalarProperty Name="promedio" ColumnName="promedio" />
+          <ScalarProperty Name="idUsuario" ColumnName="idUsuario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_grado">
+      <EntityTypeMapping TypeName="VHMEXModel.tbl_grado">
+        <MappingFragment StoreEntitySet="tbl_grado">
+          <ScalarProperty Name="idGrado" ColumnName="idGrado" />
+          <ScalarProperty Name="grado" ColumnName="grado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_grupo">
+      <EntityTypeMapping TypeName="VHMEXModel.tbl_grupo">
+        <MappingFragment StoreEntitySet="tbl_grupo">
+          <ScalarProperty Name="idGrupo" ColumnName="idGrupo" />
+          <ScalarProperty Name="grupo" ColumnName="grupo" />
+          <ScalarProperty Name="idGrado" ColumnName="idGrado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_materia">
+      <EntityTypeMapping TypeName="VHMEXModel.tbl_materia">
+        <MappingFragment StoreEntitySet="tbl_materia">
+          <ScalarProperty Name="idMateria" ColumnName="idMateria" />
+          <ScalarProperty Name="NombreMateria" ColumnName="NombreMateria" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_nivel">
+      <EntityTypeMapping TypeName="VHMEXModel.tbl_nivel">
+        <MappingFragment StoreEntitySet="tbl_nivel">
+          <ScalarProperty Name="idNivel" ColumnName="idNivel" />
+          <ScalarProperty Name="nombreNivel" ColumnName="nombreNivel" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_nivel_grado">
+      <EntityTypeMapping TypeName="VHMEXModel.tbl_nivel_grado">
+        <MappingFragment StoreEntitySet="tbl_nivel_grado">
+          <ScalarProperty Name="idNivelGrado" ColumnName="idNivelGrado" />
+          <ScalarProperty Name="idNivel" ColumnName="idNivel" />
+          <ScalarProperty Name="idGrado" ColumnName="idGrado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_nivel_materia">
+      <EntityTypeMapping TypeName="VHMEXModel.tbl_nivel_materia">
+        <MappingFragment StoreEntitySet="tbl_nivel_materia">
+          <ScalarProperty Name="idNivelMateria" ColumnName="idNivelMateria" />
+          <ScalarProperty Name="idNivel" ColumnName="idNivel" />
+          <ScalarProperty Name="idMateria" ColumnName="idMateria" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_periodo">
+      <EntityTypeMapping TypeName="VHMEXModel.tbl_periodo">
+        <MappingFragment StoreEntitySet="tbl_periodo">
+          <ScalarProperty Name="idPeriodo" ColumnName="idPeriodo" />
+          <ScalarProperty Name="periodo" ColumnName="periodo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_periodo_nivel">
+      <EntityTypeMapping TypeName="VHMEXModel.tbl_periodo_nivel">
+        <MappingFragment StoreEntitySet="tbl_periodo_nivel">
+          <ScalarProperty Name="idPeridoNivel" ColumnName="idPeridoNivel" />
+          <ScalarProperty Name="idPeriodo" ColumnName="idPeriodo" />
+          <ScalarProperty Name="idNivel" ColumnName="idNivel" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_rol">
+      <EntityTypeMapping TypeName="VHMEXModel.tbl_rol">
+        <MappingFragment StoreEntitySet="tbl_rol">
+          <ScalarProperty Name="idRol" ColumnName="idRol" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_usuario">
+      <EntityTypeMapping TypeName="VHMEXModel.tbl_usuario">
+        <MappingFragment StoreEntitySet="tbl_usuario">
+          <ScalarProperty Name="idUsuario" ColumnName="idUsuario" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="apellido" ColumnName="apellido" />
+          <ScalarProperty Name="correo_electronico" ColumnName="correo_electronico" />
+          <ScalarProperty Name="password" ColumnName="password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_usuario_periodo">
+      <EntityTypeMapping TypeName="VHMEXModel.tbl_usuario_periodo">
+        <MappingFragment StoreEntitySet="tbl_usuario_periodo">
+          <ScalarProperty Name="idUsuarioPeriodo" ColumnName="idUsuarioPeriodo" />
+          <ScalarProperty Name="idUsuario" ColumnName="idUsuario" />
+          <ScalarProperty Name="idPeriodo" ColumnName="idPeriodo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_usuario_rol">
+      <EntityTypeMapping TypeName="VHMEXModel.tbl_usuario_rol">
+        <MappingFragment StoreEntitySet="tbl_usuario_rol">
+          <ScalarProperty Name="idUsuarioRol" ColumnName="idUsuarioRol" />
+          <ScalarProperty Name="idUsuario" ColumnName="idUsuario" />
+          <ScalarProperty Name="idRol" ColumnName="idRol" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,36 @@
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\SistemaEscolar\Models\bin\Debug\Models.dll.config
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\SistemaEscolar\Models\bin\Debug\Models.dll
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\SistemaEscolar\Models\bin\Debug\Models.pdb
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\SistemaEscolar\Models\bin\Debug\EntityFramework.dll
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\SistemaEscolar\Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\SistemaEscolar\Models\bin\Debug\EntityFramework.xml
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\SistemaEscolar\Models\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\SistemaEscolar\Models\obj\Debug\Models.csproj.AssemblyReference.cache
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\SistemaEscolar\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\SistemaEscolar\Models\obj\Debug\Models.csproj.CopyComplete
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\SistemaEscolar\Models\obj\Debug\Models.dll
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\SistemaEscolar\Models\obj\Debug\Models.pdb
+C:\Users\Uriel Cruz\Downloads\SistemaEscolar\Models\bin\Debug\Models.dll.config
+C:\Users\Uriel Cruz\Downloads\SistemaEscolar\Models\bin\Debug\Models.dll
+C:\Users\Uriel Cruz\Downloads\SistemaEscolar\Models\bin\Debug\Models.pdb
+C:\Users\Uriel Cruz\Downloads\SistemaEscolar\Models\bin\Debug\EntityFramework.dll
+C:\Users\Uriel Cruz\Downloads\SistemaEscolar\Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Uriel Cruz\Downloads\SistemaEscolar\Models\bin\Debug\EntityFramework.xml
+C:\Users\Uriel Cruz\Downloads\SistemaEscolar\Models\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Uriel Cruz\Downloads\SistemaEscolar\Models\obj\Debug\Models.csproj.AssemblyReference.cache
+C:\Users\Uriel Cruz\Downloads\SistemaEscolar\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
+C:\Users\Uriel Cruz\Downloads\SistemaEscolar\Models\obj\Debug\Models.csproj.CopyComplete
+C:\Users\Uriel Cruz\Downloads\SistemaEscolar\Models\obj\Debug\Models.dll
+C:\Users\Uriel Cruz\Downloads\SistemaEscolar\Models\obj\Debug\Models.pdb
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\Models\bin\Debug\Models.dll.config
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\Models\bin\Debug\Models.dll
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\Models\bin\Debug\Models.pdb
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\Models\bin\Debug\EntityFramework.dll
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\Models\bin\Debug\EntityFramework.xml
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\Models\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\Models\obj\Debug\Models.csproj.AssemblyReference.cache
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\Models\obj\Debug\Models.csproj.CopyComplete
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\Models\obj\Debug\Models.dll
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\Models\obj\Debug\Models.pdb

@@ -1,0 +1,402 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="VHMEXModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="tbl_actividades">
+    <Key>
+      <PropertyRef Name="idActividades" />
+    </Key>
+    <Property Name="idActividades" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="fechainicio" Type="date" Nullable="false" />
+    <Property Name="fechaEntrega" Type="date" />
+    <Property Name="nombre" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="puntos" Type="int" />
+    <Property Name="valor" Type="int" Nullable="false" />
+    <Property Name="idMateria" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_Asistencia">
+    <Key>
+      <PropertyRef Name="idAsistencia" />
+    </Key>
+    <Property Name="idAsistencia" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="fecha" Type="date" />
+    <Property Name="idEvaluacion" Type="int" />
+  </EntityType>
+  <EntityType Name="tbl_criteriosDeEvaluacion">
+    <Key>
+      <PropertyRef Name="idCriterio" />
+    </Key>
+    <Property Name="idCriterio" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="criterio" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="porcentaje" Type="int" Nullable="false" />
+    <Property Name="idMateria" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_evaluacion">
+    <Key>
+      <PropertyRef Name="idEvaluacion" />
+    </Key>
+    <Property Name="idEvaluacion" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="promedio" Type="float" />
+    <Property Name="idUsuario" Type="int" />
+  </EntityType>
+  <EntityType Name="tbl_grado">
+    <Key>
+      <PropertyRef Name="idGrado" />
+    </Key>
+    <Property Name="idGrado" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="grado" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_grupo">
+    <Key>
+      <PropertyRef Name="idGrupo" />
+    </Key>
+    <Property Name="idGrupo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="grupo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="idGrado" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_materia">
+    <Key>
+      <PropertyRef Name="idMateria" />
+    </Key>
+    <Property Name="idMateria" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NombreMateria" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_nivel">
+    <Key>
+      <PropertyRef Name="idNivel" />
+    </Key>
+    <Property Name="idNivel" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombreNivel" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_nivel_grado">
+    <Key>
+      <PropertyRef Name="idNivelGrado" />
+    </Key>
+    <Property Name="idNivelGrado" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idNivel" Type="int" Nullable="false" />
+    <Property Name="idGrado" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_nivel_materia">
+    <Key>
+      <PropertyRef Name="idNivelMateria" />
+    </Key>
+    <Property Name="idNivelMateria" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idNivel" Type="int" Nullable="false" />
+    <Property Name="idMateria" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_periodo">
+    <Key>
+      <PropertyRef Name="idPeriodo" />
+    </Key>
+    <Property Name="idPeriodo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="periodo" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_periodo_nivel">
+    <Key>
+      <PropertyRef Name="idPeridoNivel" />
+    </Key>
+    <Property Name="idPeridoNivel" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idPeriodo" Type="int" Nullable="false" />
+    <Property Name="idNivel" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_rol">
+    <Key>
+      <PropertyRef Name="idRol" />
+    </Key>
+    <Property Name="idRol" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_usuario">
+    <Key>
+      <PropertyRef Name="idUsuario" />
+    </Key>
+    <Property Name="idUsuario" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombre" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="apellido" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="correo_electronico" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="password" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_usuario_periodo">
+    <Key>
+      <PropertyRef Name="idUsuarioPeriodo" />
+    </Key>
+    <Property Name="idUsuarioPeriodo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idUsuario" Type="int" Nullable="false" />
+    <Property Name="idPeriodo" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_usuario_rol">
+    <Key>
+      <PropertyRef Name="idUsuarioRol" />
+    </Key>
+    <Property Name="idUsuarioRol" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idUsuario" Type="int" Nullable="false" />
+    <Property Name="idRol" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_tbl_actividades_tbl_materia">
+    <End Role="tbl_materia" Type="Self.tbl_materia" Multiplicity="1" />
+    <End Role="tbl_actividades" Type="Self.tbl_actividades" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_materia">
+        <PropertyRef Name="idMateria" />
+      </Principal>
+      <Dependent Role="tbl_actividades">
+        <PropertyRef Name="idMateria" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_Asistencia_tbl_evaluacion">
+    <End Role="tbl_evaluacion" Type="Self.tbl_evaluacion" Multiplicity="0..1" />
+    <End Role="tbl_Asistencia" Type="Self.tbl_Asistencia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_evaluacion">
+        <PropertyRef Name="idEvaluacion" />
+      </Principal>
+      <Dependent Role="tbl_Asistencia">
+        <PropertyRef Name="idEvaluacion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_criteriosDeEvaluacion_tbl_materia">
+    <End Role="tbl_materia" Type="Self.tbl_materia" Multiplicity="1" />
+    <End Role="tbl_criteriosDeEvaluacion" Type="Self.tbl_criteriosDeEvaluacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_materia">
+        <PropertyRef Name="idMateria" />
+      </Principal>
+      <Dependent Role="tbl_criteriosDeEvaluacion">
+        <PropertyRef Name="idMateria" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_evaluacion_tbl_usuario">
+    <End Role="tbl_usuario" Type="Self.tbl_usuario" Multiplicity="0..1" />
+    <End Role="tbl_evaluacion" Type="Self.tbl_evaluacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_usuario">
+        <PropertyRef Name="idUsuario" />
+      </Principal>
+      <Dependent Role="tbl_evaluacion">
+        <PropertyRef Name="idUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_grupo_tbl_grado">
+    <End Role="tbl_grado" Type="Self.tbl_grado" Multiplicity="1" />
+    <End Role="tbl_grupo" Type="Self.tbl_grupo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_grado">
+        <PropertyRef Name="idGrado" />
+      </Principal>
+      <Dependent Role="tbl_grupo">
+        <PropertyRef Name="idGrado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_nivel_grado_tbl_grado">
+    <End Role="tbl_grado" Type="Self.tbl_grado" Multiplicity="1" />
+    <End Role="tbl_nivel_grado" Type="Self.tbl_nivel_grado" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_grado">
+        <PropertyRef Name="idGrado" />
+      </Principal>
+      <Dependent Role="tbl_nivel_grado">
+        <PropertyRef Name="idGrado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_nivel_grado_tbl_nivel">
+    <End Role="tbl_nivel" Type="Self.tbl_nivel" Multiplicity="1" />
+    <End Role="tbl_nivel_grado" Type="Self.tbl_nivel_grado" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_nivel">
+        <PropertyRef Name="idNivel" />
+      </Principal>
+      <Dependent Role="tbl_nivel_grado">
+        <PropertyRef Name="idNivel" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_nivel_materia_tbl_materia">
+    <End Role="tbl_materia" Type="Self.tbl_materia" Multiplicity="1" />
+    <End Role="tbl_nivel_materia" Type="Self.tbl_nivel_materia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_materia">
+        <PropertyRef Name="idMateria" />
+      </Principal>
+      <Dependent Role="tbl_nivel_materia">
+        <PropertyRef Name="idMateria" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_nivel_materia_tbl_nivel">
+    <End Role="tbl_nivel" Type="Self.tbl_nivel" Multiplicity="1" />
+    <End Role="tbl_nivel_materia" Type="Self.tbl_nivel_materia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_nivel">
+        <PropertyRef Name="idNivel" />
+      </Principal>
+      <Dependent Role="tbl_nivel_materia">
+        <PropertyRef Name="idNivel" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_periodo_nivel_tbl_nivel">
+    <End Role="tbl_nivel" Type="Self.tbl_nivel" Multiplicity="1" />
+    <End Role="tbl_periodo_nivel" Type="Self.tbl_periodo_nivel" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_nivel">
+        <PropertyRef Name="idNivel" />
+      </Principal>
+      <Dependent Role="tbl_periodo_nivel">
+        <PropertyRef Name="idNivel" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_periodo_nivel_tbl_periodo">
+    <End Role="tbl_periodo" Type="Self.tbl_periodo" Multiplicity="1" />
+    <End Role="tbl_periodo_nivel" Type="Self.tbl_periodo_nivel" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_periodo">
+        <PropertyRef Name="idPeriodo" />
+      </Principal>
+      <Dependent Role="tbl_periodo_nivel">
+        <PropertyRef Name="idPeriodo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_usuario_periodo_tbl_periodo">
+    <End Role="tbl_periodo" Type="Self.tbl_periodo" Multiplicity="1" />
+    <End Role="tbl_usuario_periodo" Type="Self.tbl_usuario_periodo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_periodo">
+        <PropertyRef Name="idPeriodo" />
+      </Principal>
+      <Dependent Role="tbl_usuario_periodo">
+        <PropertyRef Name="idPeriodo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_usuario_periodo_tbl_usuario">
+    <End Role="tbl_usuario" Type="Self.tbl_usuario" Multiplicity="1" />
+    <End Role="tbl_usuario_periodo" Type="Self.tbl_usuario_periodo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_usuario">
+        <PropertyRef Name="idUsuario" />
+      </Principal>
+      <Dependent Role="tbl_usuario_periodo">
+        <PropertyRef Name="idUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_usuario_rol_tbl_rol">
+    <End Role="tbl_rol" Type="Self.tbl_rol" Multiplicity="1" />
+    <End Role="tbl_usuario_rol" Type="Self.tbl_usuario_rol" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_rol">
+        <PropertyRef Name="idRol" />
+      </Principal>
+      <Dependent Role="tbl_usuario_rol">
+        <PropertyRef Name="idRol" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_usuario_rol_tbl_usuario">
+    <End Role="tbl_usuario" Type="Self.tbl_usuario" Multiplicity="1" />
+    <End Role="tbl_usuario_rol" Type="Self.tbl_usuario_rol" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_usuario">
+        <PropertyRef Name="idUsuario" />
+      </Principal>
+      <Dependent Role="tbl_usuario_rol">
+        <PropertyRef Name="idUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="VHMEXModelStoreContainer">
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_actividades" EntityType="Self.tbl_actividades" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Asistencia" EntityType="Self.tbl_Asistencia" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_criteriosDeEvaluacion" EntityType="Self.tbl_criteriosDeEvaluacion" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_evaluacion" EntityType="Self.tbl_evaluacion" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_grado" EntityType="Self.tbl_grado" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_grupo" EntityType="Self.tbl_grupo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_materia" EntityType="Self.tbl_materia" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_nivel" EntityType="Self.tbl_nivel" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_nivel_grado" EntityType="Self.tbl_nivel_grado" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_nivel_materia" EntityType="Self.tbl_nivel_materia" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_periodo" EntityType="Self.tbl_periodo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_periodo_nivel" EntityType="Self.tbl_periodo_nivel" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_rol" EntityType="Self.tbl_rol" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_usuario" EntityType="Self.tbl_usuario" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_usuario_periodo" EntityType="Self.tbl_usuario_periodo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_usuario_rol" EntityType="Self.tbl_usuario_rol" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_tbl_actividades_tbl_materia" Association="Self.FK_tbl_actividades_tbl_materia">
+      <End Role="tbl_materia" EntitySet="tbl_materia" />
+      <End Role="tbl_actividades" EntitySet="tbl_actividades" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_Asistencia_tbl_evaluacion" Association="Self.FK_tbl_Asistencia_tbl_evaluacion">
+      <End Role="tbl_evaluacion" EntitySet="tbl_evaluacion" />
+      <End Role="tbl_Asistencia" EntitySet="tbl_Asistencia" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_criteriosDeEvaluacion_tbl_materia" Association="Self.FK_tbl_criteriosDeEvaluacion_tbl_materia">
+      <End Role="tbl_materia" EntitySet="tbl_materia" />
+      <End Role="tbl_criteriosDeEvaluacion" EntitySet="tbl_criteriosDeEvaluacion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_evaluacion_tbl_usuario" Association="Self.FK_tbl_evaluacion_tbl_usuario">
+      <End Role="tbl_usuario" EntitySet="tbl_usuario" />
+      <End Role="tbl_evaluacion" EntitySet="tbl_evaluacion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_grupo_tbl_grado" Association="Self.FK_tbl_grupo_tbl_grado">
+      <End Role="tbl_grado" EntitySet="tbl_grado" />
+      <End Role="tbl_grupo" EntitySet="tbl_grupo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_nivel_grado_tbl_grado" Association="Self.FK_tbl_nivel_grado_tbl_grado">
+      <End Role="tbl_grado" EntitySet="tbl_grado" />
+      <End Role="tbl_nivel_grado" EntitySet="tbl_nivel_grado" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_nivel_grado_tbl_nivel" Association="Self.FK_tbl_nivel_grado_tbl_nivel">
+      <End Role="tbl_nivel" EntitySet="tbl_nivel" />
+      <End Role="tbl_nivel_grado" EntitySet="tbl_nivel_grado" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_nivel_materia_tbl_materia" Association="Self.FK_tbl_nivel_materia_tbl_materia">
+      <End Role="tbl_materia" EntitySet="tbl_materia" />
+      <End Role="tbl_nivel_materia" EntitySet="tbl_nivel_materia" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_nivel_materia_tbl_nivel" Association="Self.FK_tbl_nivel_materia_tbl_nivel">
+      <End Role="tbl_nivel" EntitySet="tbl_nivel" />
+      <End Role="tbl_nivel_materia" EntitySet="tbl_nivel_materia" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_periodo_nivel_tbl_nivel" Association="Self.FK_tbl_periodo_nivel_tbl_nivel">
+      <End Role="tbl_nivel" EntitySet="tbl_nivel" />
+      <End Role="tbl_periodo_nivel" EntitySet="tbl_periodo_nivel" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_periodo_nivel_tbl_periodo" Association="Self.FK_tbl_periodo_nivel_tbl_periodo">
+      <End Role="tbl_periodo" EntitySet="tbl_periodo" />
+      <End Role="tbl_periodo_nivel" EntitySet="tbl_periodo_nivel" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_usuario_periodo_tbl_periodo" Association="Self.FK_tbl_usuario_periodo_tbl_periodo">
+      <End Role="tbl_periodo" EntitySet="tbl_periodo" />
+      <End Role="tbl_usuario_periodo" EntitySet="tbl_usuario_periodo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_usuario_periodo_tbl_usuario" Association="Self.FK_tbl_usuario_periodo_tbl_usuario">
+      <End Role="tbl_usuario" EntitySet="tbl_usuario" />
+      <End Role="tbl_usuario_periodo" EntitySet="tbl_usuario_periodo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_usuario_rol_tbl_rol" Association="Self.FK_tbl_usuario_rol_tbl_rol">
+      <End Role="tbl_rol" EntitySet="tbl_rol" />
+      <End Role="tbl_usuario_rol" EntitySet="tbl_usuario_rol" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_usuario_rol_tbl_usuario" Association="Self.FK_tbl_usuario_rol_tbl_usuario">
+      <End Role="tbl_usuario" EntitySet="tbl_usuario" />
+      <End Role="tbl_usuario_rol" EntitySet="tbl_usuario_rol" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

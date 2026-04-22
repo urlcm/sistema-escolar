@@ -1,0 +1,105 @@
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\SistemaEscolar\SistemaEscolar\bin\Debug\SistemaEscolar.exe.config
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\SistemaEscolar\SistemaEscolar\bin\Debug\SistemaEscolar.exe
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\SistemaEscolar\SistemaEscolar\bin\Debug\SistemaEscolar.pdb
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\SistemaEscolar\SistemaEscolar\bin\Debug\Controllers.dll
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\SistemaEscolar\SistemaEscolar\bin\Debug\EntityFramework.dll
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\SistemaEscolar\SistemaEscolar\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\SistemaEscolar\SistemaEscolar\bin\Debug\Models.dll
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\SistemaEscolar\SistemaEscolar\bin\Debug\Controllers.pdb
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\SistemaEscolar\SistemaEscolar\bin\Debug\Controllers.dll.config
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\SistemaEscolar\SistemaEscolar\bin\Debug\Models.pdb
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\SistemaEscolar\SistemaEscolar\bin\Debug\Models.dll.config
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\SistemaEscolar\SistemaEscolar\bin\Debug\EntityFramework.xml
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\SistemaEscolar\SistemaEscolar\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\SistemaEscolar\SistemaEscolar\obj\Debug\SistemaEscolar.csproj.AssemblyReference.cache
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\SistemaEscolar\SistemaEscolar\obj\Debug\SistemaEscolar.csproj.SuggestedBindingRedirects.cache
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\SistemaEscolar\SistemaEscolar\obj\Debug\SistemaEscolar.Inicio.resources
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\SistemaEscolar\SistemaEscolar\obj\Debug\SistemaEscolar.Properties.Resources.resources
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\SistemaEscolar\SistemaEscolar\obj\Debug\SistemaEscolar.csproj.GenerateResource.cache
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\SistemaEscolar\SistemaEscolar\obj\Debug\SistemaEscolar.csproj.CoreCompileInputs.cache
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\SistemaEscolar\SistemaEscolar\obj\Debug\SistemaEscolar.csproj.CopyComplete
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\SistemaEscolar\SistemaEscolar\obj\Debug\SistemaEscolar.exe
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\SistemaEscolar\SistemaEscolar\obj\Debug\SistemaEscolar.pdb
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\SistemaEscolar\SistemaEscolar\obj\Debug\SistemaEscolar.AltaUsuarios.resources
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\SistemaEscolar\SistemaEscolar\obj\Debug\SistemaEscolar.SesionAdmin.resources
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\SistemaEscolar\SistemaEscolar\obj\Debug\SistemaEscolar.SesionAlumno.resources
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\SistemaEscolar\SistemaEscolar\obj\Debug\SistemaEscolar.SesionCoordinador.resources
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\SistemaEscolar\SistemaEscolar\obj\Debug\SistemaEscolar.Calificaciones.resources
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\SistemaEscolar\SistemaEscolar\obj\Debug\SistemaEscolar.ReporteActividades.resources
+C:\Users\Uriel Cruz\Downloads\SistemaEscolar\SistemaEscolar\bin\Debug\SistemaEscolar.exe.config
+C:\Users\Uriel Cruz\Downloads\SistemaEscolar\SistemaEscolar\bin\Debug\SistemaEscolar.exe
+C:\Users\Uriel Cruz\Downloads\SistemaEscolar\SistemaEscolar\bin\Debug\SistemaEscolar.pdb
+C:\Users\Uriel Cruz\Downloads\SistemaEscolar\SistemaEscolar\bin\Debug\Controllers.dll
+C:\Users\Uriel Cruz\Downloads\SistemaEscolar\SistemaEscolar\bin\Debug\EntityFramework.dll
+C:\Users\Uriel Cruz\Downloads\SistemaEscolar\SistemaEscolar\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Uriel Cruz\Downloads\SistemaEscolar\SistemaEscolar\bin\Debug\Models.dll
+C:\Users\Uriel Cruz\Downloads\SistemaEscolar\SistemaEscolar\bin\Debug\Controllers.pdb
+C:\Users\Uriel Cruz\Downloads\SistemaEscolar\SistemaEscolar\bin\Debug\Controllers.dll.config
+C:\Users\Uriel Cruz\Downloads\SistemaEscolar\SistemaEscolar\bin\Debug\Models.pdb
+C:\Users\Uriel Cruz\Downloads\SistemaEscolar\SistemaEscolar\bin\Debug\Models.dll.config
+C:\Users\Uriel Cruz\Downloads\SistemaEscolar\SistemaEscolar\bin\Debug\EntityFramework.xml
+C:\Users\Uriel Cruz\Downloads\SistemaEscolar\SistemaEscolar\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Uriel Cruz\Downloads\SistemaEscolar\SistemaEscolar\obj\Debug\SistemaEscolar.csproj.AssemblyReference.cache
+C:\Users\Uriel Cruz\Downloads\SistemaEscolar\SistemaEscolar\obj\Debug\SistemaEscolar.csproj.SuggestedBindingRedirects.cache
+C:\Users\Uriel Cruz\Downloads\SistemaEscolar\SistemaEscolar\obj\Debug\SistemaEscolar.AltaUsuarios.resources
+C:\Users\Uriel Cruz\Downloads\SistemaEscolar\SistemaEscolar\obj\Debug\SistemaEscolar.Calificaciones.resources
+C:\Users\Uriel Cruz\Downloads\SistemaEscolar\SistemaEscolar\obj\Debug\SistemaEscolar.Inicio.resources
+C:\Users\Uriel Cruz\Downloads\SistemaEscolar\SistemaEscolar\obj\Debug\SistemaEscolar.Properties.Resources.resources
+C:\Users\Uriel Cruz\Downloads\SistemaEscolar\SistemaEscolar\obj\Debug\SistemaEscolar.ReporteActividades.resources
+C:\Users\Uriel Cruz\Downloads\SistemaEscolar\SistemaEscolar\obj\Debug\SistemaEscolar.SesionAdmin.resources
+C:\Users\Uriel Cruz\Downloads\SistemaEscolar\SistemaEscolar\obj\Debug\SistemaEscolar.SesionAlumno.resources
+C:\Users\Uriel Cruz\Downloads\SistemaEscolar\SistemaEscolar\obj\Debug\SistemaEscolar.SesionCoordinador.resources
+C:\Users\Uriel Cruz\Downloads\SistemaEscolar\SistemaEscolar\obj\Debug\SistemaEscolar.SesionMaestro.resources
+C:\Users\Uriel Cruz\Downloads\SistemaEscolar\SistemaEscolar\obj\Debug\SistemaEscolar.SesionPadre.resources
+C:\Users\Uriel Cruz\Downloads\SistemaEscolar\SistemaEscolar\obj\Debug\SistemaEscolar.csproj.GenerateResource.cache
+C:\Users\Uriel Cruz\Downloads\SistemaEscolar\SistemaEscolar\obj\Debug\SistemaEscolar.csproj.CoreCompileInputs.cache
+C:\Users\Uriel Cruz\Downloads\SistemaEscolar\SistemaEscolar\obj\Debug\SistemaEscolar.csproj.CopyComplete
+C:\Users\Uriel Cruz\Downloads\SistemaEscolar\SistemaEscolar\obj\Debug\SistemaEscolar.exe
+C:\Users\Uriel Cruz\Downloads\SistemaEscolar\SistemaEscolar\obj\Debug\SistemaEscolar.pdb
+C:\Users\Uriel Cruz\Downloads\SistemaEscolar\SistemaEscolar\obj\Debug\SistemaEscolar.AltaGrupo.resources
+C:\Users\Uriel Cruz\Downloads\SistemaEscolar\SistemaEscolar\obj\Debug\SistemaEscolar.AltaMaterias.resources
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\SistemaEscolar\bin\Debug\SistemaEscolar.exe.config
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\SistemaEscolar\bin\Debug\SistemaEscolar.exe
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\SistemaEscolar\bin\Debug\SistemaEscolar.pdb
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\SistemaEscolar\bin\Debug\Controllers.dll
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\SistemaEscolar\bin\Debug\EntityFramework.dll
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\SistemaEscolar\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\SistemaEscolar\bin\Debug\Models.dll
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\SistemaEscolar\bin\Debug\Controllers.pdb
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\SistemaEscolar\bin\Debug\Controllers.dll.config
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\SistemaEscolar\bin\Debug\Models.pdb
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\SistemaEscolar\bin\Debug\Models.dll.config
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\SistemaEscolar\bin\Debug\EntityFramework.xml
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\SistemaEscolar\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\SistemaEscolar\obj\Debug\SistemaEscolar.csproj.AssemblyReference.cache
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\SistemaEscolar\obj\Debug\SistemaEscolar.csproj.SuggestedBindingRedirects.cache
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\SistemaEscolar\obj\Debug\SistemaEscolar.AltaGrupo.resources
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\SistemaEscolar\obj\Debug\SistemaEscolar.AltaMaterias.resources
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\SistemaEscolar\obj\Debug\SistemaEscolar.AltaUsuarios.resources
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\SistemaEscolar\obj\Debug\SistemaEscolar.AlumnosGrupos.resources
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\SistemaEscolar\obj\Debug\SistemaEscolar.Calificaciones.resources
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\SistemaEscolar\obj\Debug\SistemaEscolar.DocenteMaterias.resources
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\SistemaEscolar\obj\Debug\SistemaEscolar.Inicio.resources
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\SistemaEscolar\obj\Debug\SistemaEscolar.Properties.Resources.resources
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\SistemaEscolar\obj\Debug\SistemaEscolar.ReporteActividades.resources
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\SistemaEscolar\obj\Debug\SistemaEscolar.SesionAdmin.resources
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\SistemaEscolar\obj\Debug\SistemaEscolar.SesionAlumno.resources
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\SistemaEscolar\obj\Debug\SistemaEscolar.SesionCoordinador.resources
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\SistemaEscolar\obj\Debug\SistemaEscolar.SesionMaestro.resources
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\SistemaEscolar\obj\Debug\SistemaEscolar.SesionPadre.resources
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\SistemaEscolar\obj\Debug\SistemaEscolar.csproj.GenerateResource.cache
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\SistemaEscolar\obj\Debug\SistemaEscolar.csproj.CoreCompileInputs.cache
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\SistemaEscolar\obj\Debug\SistemaEscolar.csproj.CopyComplete
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\SistemaEscolar\obj\Debug\SistemaEscolar.exe
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\SistemaEscolar\obj\Debug\SistemaEscolar.pdb
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\SistemaEscolar\obj\Debug\SistemaEscolar.PadresAlumnos.resources
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\SistemaEscolar\obj\Debug\SistemaEscolar.Roles.resources
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\SistemaEscolar\obj\Debug\SistemaEscolar.DocenteGrupos.resources
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\SistemaEscolar\obj\Debug\SistemaEscolar.Asistencia.resources
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\SistemaEscolar\obj\Debug\SistemaEscolar.TareasActividades.resources
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\SistemaEscolar\obj\Debug\SistemaEscolar.TareasActividadesAlumnos.resources
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\SistemaEscolar\obj\Debug\SistemaEscolar.Criterios.resources
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\SistemaEscolar\obj\Debug\SistemaEscolar.CalificarActividades.resources
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\SistemaEscolar\obj\Debug\SistemaEscolar.ModificarUsuarios.resources
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\SistemaEscolar\obj\Debug\SistemaEscolar.CambiarCalificaciones.resources
+C:\Users\Uriel Cruz\OneDrive\Documentos\Materias UAT - 6to semestre\Ingenieria de software\Versiones\SistemaEscolar\SistemaEscolar\obj\Debug\SistemaEscolar.NuevoGrupo.resources
