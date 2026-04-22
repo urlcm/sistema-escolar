@@ -19,7 +19,7 @@ Sistema Escolar es una aplicación de escritorio que permite a instituciones edu
 
 Desarrollado en C# con WinForms y SQL Server, aplicando el patrón **MVC** para mantener separación entre lógica de negocio, acceso a datos e interfaz de usuario.
 
-> 💡 Este fue un proyecto previo en mi aprendizaje de C# y .NET. Mi proyecto más reciente — una [Plataforma de Lógica de Programación con IA](https://github.com/urlcm/plataforma-logica-de-programacion) usando Java, Spring Boot, Angular y Docker — refleja mi stack actual.
+> 💡 Este fue un proyecto previo en mi aprendizaje de C# y .NET. Mi proyecto más reciente — una [Plataforma de Lógica de Programación con IA](https://github.com/urlcm/plataforma-logica-de-programacion) usando Java, Spring Boot, Angular y Docker o [La aplicaciion del hospital Christus](https://github.com/urlcm/visualizador-de-datos) usando C# Windows Forms, SQL Server, websockets — refleja mi stack actual.
 
 ---
 
