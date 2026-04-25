@@ -40,6 +40,8 @@ Desarrollado en C# con WinForms y SQL Server, aplicando el patrón **MVC** para 
 
 ## Video del sistema
 
+[![video](https://github.com/urlcm/sistema-escolar/blob/ab00057dbed43c67c37ae2b81b2f8cdd870777bb/SistemaEscolar/imagenes/sistema-escolar.mp4)](https://github.com/user-attachments/assets/1ca64222-a552-4894-b705-1f865e13dbea)
+
 ---
 
 ## ✨ Funcionalidades
