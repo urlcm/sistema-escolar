@@ -25,8 +25,20 @@ Desarrollado en C# con WinForms y SQL Server, aplicando el patrón **MVC** para 
 
 ## 📸 Capturas de pantalla
 
-> 🔧 Próximamente
+## Login
+<img width="920" height="563" alt="Image" src="https://github.com/user-attachments/assets/a99e9fba-1b3b-441d-91e4-951d624a7a6d" />
 
+## Sesión de administrador
+<img width="941" height="474" alt="Image" src="https://github.com/user-attachments/assets/b2e1434a-0a6a-4f45-8d46-ad6992e06f78" />
+
+## Sesión de padre
+<img width="945" height="560" alt="Image" src="https://github.com/user-attachments/assets/93d7b776-12d4-4d45-9f12-357a1f755e6f" />
+
+## Sesión de alumno
+<img width="945" height="560" alt="Image" src="https://github.com/user-attachments/assets/e14ee126-ab7d-43dc-935f-7b0d12f306f1" />
+
+
+## Video del sistema
 
 ---
 
@@ -37,6 +49,7 @@ Desarrollado en C# con WinForms y SQL Server, aplicando el patrón **MVC** para 
 - 📚 **Gestión de tareas** — Creación y asignación de tareas por grupo o materia
 - 🏫 **Grados y grupos** — Organización jerárquica del alumnado por nivel y grupo
 - 🔍 **Consultas y filtros** — Búsqueda y listado de registros por distintos criterios
+- 📋 **Generación de reportes** —Creación de reportes en formato de PDF o Excel
 
 ---
 
